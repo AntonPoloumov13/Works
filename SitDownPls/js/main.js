@@ -481,6 +481,7 @@ if(offerSwiper) {
 
     breakpoints:  {
       100:  {
+        slidesPerGroup: 1,
         slidesPerView: 1,
         spaceBetween: 0,
     },
