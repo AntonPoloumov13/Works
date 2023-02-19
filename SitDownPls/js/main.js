@@ -1172,7 +1172,7 @@ if (mapClass) {
     `
   }, {
       iconLayout: "default#image",
-      iconImageHref: "../img/map-slone.svg",
+      iconImageHref: "./img/map-slone.svg",
       iconImageSize: [32, 22],
       iconImageOffset: [0, 0],
       hideIconOnBalloonOpen: false,
@@ -1205,7 +1205,7 @@ if (mapClass) {
     `
   }, {
       iconLayout: "default#image",
-      iconImageHref: "../img/map-slone.svg",
+      iconImageHref: "./img/map-slone.svg",
       iconImageSize: [32, 22],
       iconImageOffset: [0, 0],
       balloonOffset: [0, -10],
