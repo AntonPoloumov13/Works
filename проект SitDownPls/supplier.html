@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <link rel="preload" href="./fonts/OpenSans-Bold.woff" as="font">
+    <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font">
+    <link rel="preload" href="./fonts/OpenSans-Regular.woff" as="font">
+    <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font">
+    <link rel="preload" href="./fonts/OpenSans-SemiBold.woff" as="font">
+    <link rel="preload" href="./fonts/OpenSans-SemiBold.woff2" as="font">
+    <link rel="preload" href="./fonts/PlayfairDisplay-Black.woff" as="font">
+    <link rel="preload" href="./fonts/PlayfairDisplay-Black.woff2" as="font">
+    <link rel="stylesheet" href="./resources/choices/choices.css">
+    <link rel="stylesheet" href="./css/main-min.css">
+    <script defer src="./resources/choices/choices.js"></script>
+    <script defer src="./resources/tooltip/popper.min.js"></script>
+    <script defer src="./resources/tooltip/tippy.js"></script>
+    <script defer src="./js/main.js"></script>
+    <title>SitDownPls</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header header-bottom">
+      <div class="header__container600">
+      </div>
+      <div class="header__container1220">
+        <div class="header__container container container1220">
+        </div>
+      </div>
+      <div class="header__container1920" data-da=".nav-burger, 600, last">
+        <div class="container header__container data-cont">
+          <div class="flex header__midea" data-da=".container1220, 1220, last">
+            <div class="header__custom">
+              <h3 class="header__title">Ваш регион:</h3>
+              <div class="header__select-container">
+                <select class="header__select" name="category" id="selectCustom">
+                  <option value="Moscow" >Москва</option>
+                  <option value="Kazan" >Казань</option>
+                  <option value="Ufa">Уфа</option>
+                  <option value="Perm">Пермь</option>
+                </select>
+              </div>
+            </div>
+            <div class="header__social">
+              <svg width="22" height="22">
+                <use xlink:href="./img/svg/sprites.svg#tel"></use>
+              </svg>
+              <a href="tel:+7(495)885-45-47" aria-label="Нажмите чтобы позвонить нам">+7 (495) 885-45-47</a>
+            </div>
+          </div>
+          <ul class="header__list flex" aria-label="Второстепенная навигация по сайту">
+            <li class="header__item">
+              <a href="#!" aria-label="Узнать о компании">О компании</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" aria-label="Узнать о гарантии и возврате">Гарантия и возврат</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" aria-label="Корпоративным клиентам">Корпоративным клиентам</a>
+            </li>
+            <li class="header__item">
+              <a href="#!" aria-label="Дизайн-решение">Дизайн-решение</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__burger" data-da=".header__active, 991, last" >
+        <button class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="header__container container padding">
+        <div class="header__active"></div>
+        <a class="header__logo" href="./index.html" data-da=".header__container600, 600, last" aria-label="Логотип">
+          <img src="./img/logo1920.svg" alt="Логотип">
+        </a>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul class="header__menu-list flex" aria-label="Список навигации по сайту">
+              <li class="header__menu-item">
+                <a href="catalog.html" aria-label="Каталог">Каталог</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Магазины">Магазины</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Шоу-рум">Шоу-рум</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Доставка и оплата">Доставка и оплата</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Дисконт">Дисконт</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="contacts.html" aria-label="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__menu-nav nav-burger">
+          <button class="header__exit-menu" aria-label="Кнопка выхода из меню">
+          </button>
+          <nav class="header__nav active-nav flex">
+            <ul class="header__menu-list margin-list" aria-label="Список навигации по сайту">
+              <li class="header__menu-item">
+                <a href="catalog.html" aria-label="Каталог">Каталог</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Магазины">Магазины</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Шоу-рум">Шоу-рум</a>
+              </li>
+            </ul>
+            <ul class="header__menu-list" aria-label="Список навигации по сайту">
+              <li class="header__menu-item">
+                <a href="#!"  aria-label="Доставка и оплата">Доставка и оплата</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#!" aria-label="Дисконт">Дисконт</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="contacts.html" aria-label="Контакты">Контакты</a>
+              </li>
+            </ul>
+            <svg width="161" height="112">
+              <use xlink:href="./img/svg/sprites.svg#slon"></use>
+            </svg>
+          </nav>
+        </div>
+      </div>
+      <div class="header__container-center container">
+          <div class="header__container-form searchwrapper flex">
+              <form action="#!" class="header__glass-form flex">
+                  <svg width="20" height="20" class="header__glass">
+                    <use xlink:href="./img/svg/sprites.svg#glass"></use>
+                  </svg>
+                <input type="text" placeholder="Я хочу купить..." aria-label="Поиск" class="header__glass-input">
+              </form>
+              <button class="header__button-form" aria-label="Поиск пользователя">
+                <svg width="32" height="32">
+                  <use xlink:href="./img/svg/sprites.svg#form"></use>
+                </svg>
+              </button>
+          </div>
+          <div class="header__select-container2">
+            <select class="header__select2" name="category" id="selectCustomForm">
+              <optgroup label="">
+                <option value="Category" >Категория</option>
+                <option value="Sofas" >Диваны</option>
+                <option value="armchairs">Кресла</option>
+                <option value="Puffs">Пуфы</option>
+                <option value="Beds">Кровати</option>
+                <option value="Cabinets">Тумбы</option>
+              </optgroup>
+              <optgroup label="">
+                <option value="Dressers">Комоды</option>
+                <option value="Chairs">Стулья</option>
+                <option value="tables">Столы</option>
+                <option value="Accessories">Аксессуары</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="header__users"  data-da=".data-cont, 1220, last">
+            <ul class="header__users-list flex" data-da=".padding, 991, last" aria-label="Список пользователя и корзина">
+              <li class="header__users-item">
+                <a class="header__button-users" aria-label="Вход в личный кабинет">
+                  <svg width="26" height="28" >
+                    <use xlink:href="./img/svg/sprites.svg#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__users-shop">
+                <a class="header__button-users" aria-label="Просмотреть корзину">
+                  <svg width="30" height="28">
+                    <use xlink:href="./img/svg/sprites.svg#shop"></use>
+                  </svg>
+                  <span>0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </header>
+    <main>
+      <section class="supplier">
+        <div class="supplier__container container catalog">
+          <div class="catalog__choice">
+            <ul class="catalog__choice-list flex" aria-label="Список">
+              <li class="catalog__choice-item">
+                <a href="index.html" aria-label="Главная">Главная
+                  <span>/</span>
+                </a>
+              </li>
+              <li class="catalog__choice-item">
+                <a href="catalog.html" class="active-item" aria-label="Сотрудничество">Сотрудничество
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="supplier__container-center">
+            <h1 class="supplier__container-title">Сотрудничество</h1>
+            <div class="supplier__planning indent">
+              <h2 class="supplier__subtitle">Поставщикам</h2>
+              <p class="supplier__planning-text supplier-text">
+                При планировании обстановки торгового помещения важно обустроить его с комфортом для покупателей: грамотно зонировать, обеспечить эффективную демонстрацию и хранение товаров в зале. Если вам необходимо комплексное оснащение, организация зоны отдыха или отдельные предметы меблировки для поддержания эффективной торговой деятельности, мы поможем выбрать продукцию с учетом нагрузки от поступающего трафика.
+              </p>
+            </div>
+            <div class="supplier__advantages indent">
+              <h2 class="supplier__subtitle">Что вы получаете?</h2>
+              <ul class="supplier__advantages-list">
+                <li class="supplier__advantages-item flex">
+                  <svg width="25" height="25">
+                    <use xlink:href="./img/svg/sprites.svg#supplier1"></use>
+                  </svg>
+                  <p class="supplier__advantages-text">Мы ценим идеи и вдохновение и предлагаем сотрудничество талантливым дизайнерам и архитекторам. Выпускаемая нами продукция гармонично дополнит любой современный проект.</p>
+                </li>
+                <li class="supplier__advantages-item flex">
+                  <svg width="25" height="25">
+                    <use xlink:href="./img/svg/sprites.svg#supplier2"></use>
+                  </svg>
+                  <p class="supplier__advantages-text">Комплексное решение для красивого и функционального обустройства любых пространств. </p>
+                </li>
+                <li class="supplier__advantages-item flex">
+                  <svg width="25" height="25">
+                    <use xlink:href="./img/svg/sprites.svg#supplier3"></use>
+                  </svg>
+                  <p class="supplier__advantages-text">В ассортименте представлены все товарные группы для того, чтобы воссоздать обстановку в помещениях разных типов: кабинетах, смешанных пространствах, Open Space, гостевых и переговорных комнатах.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="supplier__opportunity indent">
+              <h2 class="supplier__subtitle size">Ваши преимущества от сотрудничества</h2>
+              <ul class="supplier__opportunity-list">
+                <li class="supplier__opportunity-item">
+                  <span class="supplier__opportunity-link">Возможность 1:</span>
+                  <p class="supplier__opportunity-text supplier-text">Создавайте незабываемые впечатления. Красиво меблированная фотостудия не оставит клиентов равнодушными, а созданная интерьером атмосфера будет надолго запечатлена на их снимках. Стильная и разноплановая обстановка творческого пространства – ключевая составляющая его успешной деятельности. Позаботьтесь о людях в кадре, а мы поможем правильно выбрать мебель.</p>
+                </li>
+                <li class="supplier__opportunity-item">
+                  <span class="supplier__opportunity-link">Возможность 2:</span>
+                  <p class="supplier__opportunity-text supplier-text">Мы предлагаем застройщикам, работающим на территории РФ, участие наших специалистов от этапа проектирования обстановки квартир и подбора комплексных интерьерных решений до оптовых поставок мебели. Поможем организовать демонстрационный зал с образцами изделий и материалов на площади нового здания, чтобы покупатель заблаговременно подобрал тот вариант меблировки, который удовлетворит даже самые взыскательные ожидания.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="supplier__guarantees indent">
+              <h2 class="supplier__subtitle">Гарантии</h2>
+              <ul class="supplier__guarantees-list">
+                <li class="supplier__guarantees-item flex">
+                  <span class="supplier__guarantees-link">1.</span>
+                  <p class="supplier__guarantees-text supplier-text">При приемке товара Покупатель должен внимательно проверить его количество, качество и ассортимент на соответствие сопроводительным документам и заказу. После подписания товарного чека Покупатель утрачивает право предъявления претензий, которые можно выявить при приемке товара.</p>
+                </li>
+                <li class="supplier__guarantees-item flex">
+                  <span class="supplier__guarantees-link">2.</span>
+                  <p class="supplier__guarantees-text supplier-text">На товары, сборка которых производилась покупателем самостоятельно (не специалистами Продавца), гарантийные обязательства Продавца не распространяются. Также гарантия не распространяется на повреждения товара, полученные в ходе самостоятельной доставки и подъема товара. Покупатель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, т.е. если товар может быть использован исключительно приобретающим его потребителем.</p>
+                </li>
+                <li class="supplier__guarantees-item flex">
+                  <span class="supplier__guarantees-link">3.</span>
+                  <p class="supplier__guarantees-text supplier-text">Возврат или обмен товара возможен при условии, что сохранена упаковка, товарный вид и потребительские свойства товара, а также товарный и кассовый чеки. В этом случае мы гарантируем вам возврат полной стоимости товара (за вычетом стоимости доставки). В случае отказа от товара при доставке, клиент оплачивает услуги доставки.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="supplier__term flex">
+              <div class="supplier__term-img">
+                <picture>
+                <source media="(max-width: 600px)" srcset="./img/supplier4(320).png" >
+                <img src="./img/supplier4.png" alt="Карандаш">
+                </picture>
+              </div>
+              <p class="supplier__term-text">
+                Срок гарантии на нашу мебель составляет <br> от 18 до 60 месяцев
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__container container flex">
+          <div class="footer__left">
+            <a  href="./index.html" aria-label="Логотип">
+              <img src="./img/logo1920.svg" alt="Логотип">
+            </a>
+            <ul class="footer__social flex">
+              <li>
+                <a href="#!">
+                  <svg width="30" height="30">
+                    <use xlink:href="./img/svg/sprites.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <svg width="30" height="30">
+                    <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <svg width="30" height="30">
+                    <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right flex">
+            <ul class="footer__right-list">
+              <li>
+                <h3 class="footer__right-title">О нас</h3>
+              </li>
+              <li class="footer__right-item">
+                <a href="#!">О компании</a></li>
+              <li class="footer__right-item">
+                <a href="#!">Блог</a></li>
+            </ul>
+            <ul class="footer__right-list display-list">
+              <li>
+                <h3 class="footer__right-title">Услуги</h3>
+              </li>
+              <li class="footer__right-item">
+                <a href="#!">Доставка</a></li>
+              <li class="footer__right-item">
+                <a href="#!">Рассрочка и кредит</a></li>
+              <li class="footer__right-item">
+                 <a href="#!">Сборка и установка</a>
+              </li>
+            </ul>
+            <ul class="footer__right-list">
+              <li><h3 class="footer__right-title">Связь с нами</h3></li>
+              <li class="footer__right-item">
+                <a href="#!">Обратная связь</a></li>
+              <li class="footer__right-item">
+                <a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="footer__right-list display-list">
+             <li> <h3 class="footer__right-title">Сотрудничество</h3></li>
+              <li class="footer__right-item">
+                <a href="supplier.html">Поставщикам</a></li>
+              <li class="footer__right-item">
+                <a href="#!">Оптовикам</a></li>
+              <li class="footer__right-item">
+                 <a href="#!">Карьера</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-text ">
+          <span>
+            SDP®   2011-2021
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

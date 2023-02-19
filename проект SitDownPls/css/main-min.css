@@ -1,0 +1,18 @@
+@import url(./overall/normalize.css);
+@import url(./overall/fonts.css);
+@import url(./overall/overall.css);
+@import url(./components/style.css);
+@import url(./components/hero.css);
+@import url(./components/offer.css);
+@import url(./components/rating.css);
+@import url(./components/oxford.css);
+@import url(./components/category.css);
+@import url(./components/helpful.css);
+@import url(./components/form.css);
+@import url(./components/footer.css);
+@import url(./components/catalog-2.css);
+@import url(./components/product.css);
+@import url(./components/popup.css);
+@import url(./components/supplier.css);
+@import url(./components/contacts.css);
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4tbWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVEsb0NBQUE7QUFDQSxnQ0FBQTtBQUNBLGtDQUFBO0FBQ0EsbUNBQUE7QUFDQSxrQ0FBQTtBQUNBLG1DQUFBO0FBQ0Esb0NBQUE7QUFDQSxvQ0FBQTtBQUNBLHNDQUFBO0FBQ0EscUNBQUE7QUFDQSxrQ0FBQTtBQUNBLG9DQUFBO0FBQ0EsdUNBQUE7QUFDQSxxQ0FBQTtBQUNBLG1DQUFBO0FBQ0Esc0NBQUE7QUFDQSxzQ0FBQSIsImZpbGUiOiJtYWluLW1pbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybCguL292ZXJhbGwvbm9ybWFsaXplLmNzcyk7XG5AaW1wb3J0IHVybCguL292ZXJhbGwvZm9udHMuY3NzKTtcbkBpbXBvcnQgdXJsKC4vb3ZlcmFsbC9vdmVyYWxsLmNzcyk7XG5AaW1wb3J0IHVybCguL2NvbXBvbmVudHMvc3R5bGUuY3NzKTtcbkBpbXBvcnQgdXJsKC4vY29tcG9uZW50cy9oZXJvLmNzcyk7XG5AaW1wb3J0IHVybCguL2NvbXBvbmVudHMvb2ZmZXIuY3NzKTtcbkBpbXBvcnQgdXJsKC4vY29tcG9uZW50cy9yYXRpbmcuY3NzKTtcbkBpbXBvcnQgdXJsKC4vY29tcG9uZW50cy9veGZvcmQuY3NzKTtcbkBpbXBvcnQgdXJsKC4vY29tcG9uZW50cy9jYXRlZ29yeS5jc3MpO1xuQGltcG9ydCB1cmwoLi9jb21wb25lbnRzL2hlbHBmdWwuY3NzKTtcbkBpbXBvcnQgdXJsKC4vY29tcG9uZW50cy9mb3JtLmNzcyk7XG5AaW1wb3J0IHVybCguL2NvbXBvbmVudHMvZm9vdGVyLmNzcyk7XG5AaW1wb3J0IHVybCguL2NvbXBvbmVudHMvY2F0YWxvZy0yLmNzcyk7XG5AaW1wb3J0IHVybCguL2NvbXBvbmVudHMvcHJvZHVjdC5jc3MpO1xuQGltcG9ydCB1cmwoLi9jb21wb25lbnRzL3BvcHVwLmNzcyk7XG5AaW1wb3J0IHVybCguL2NvbXBvbmVudHMvc3VwcGxpZXIuY3NzKTtcbkBpbXBvcnQgdXJsKC4vY29tcG9uZW50cy9jb250YWN0cy5jc3MpO1xuIl19 */
