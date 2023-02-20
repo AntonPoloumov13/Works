@@ -1,0 +1,223 @@
+:root {
+  --white:#ffffff;
+  --black:#000000;
+  --gray:#6666;
+  --gray-color:#969696;
+  --gray-lite:#666666;
+  --gray-lite-lite:#999999;
+  --violet: #9D5CD0;
+  --gray-p: #333333;
+  --gray-border: #999999;
+  --violet-lite: #C283F3;
+  --gray-border2: #CACACA;
+  --colorPurpleActive: #7943A4;
+  --violet-svg: #D1A9F0;
+  --gray-svg-color:#ECECEC;
+}
+
+.events-container {
+  position: relative;
+  padding: 0 30px;
+}
+
+.events-container__title  {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--gray-p);
+}
+
+.events-container__swiper {
+  position: relative;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.swiper-slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.events-swiper__img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.events-swiper__border {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 50px 40px 50px;
+  height: 100%;
+  border-bottom: 1px solid var(--gray-border2);
+  border-left: 1px solid var(--gray-border2);
+  border-right: 1px solid var(--gray-border2);
+}
+
+.paginator  {
+  position: absolute;
+  z-index: 2;
+}
+
+.swiper-pagination  {
+  display: none;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after  {
+  display: none;
+}
+
+.events-swiper__link  {
+  padding: 13px 0;
+  width: calc(185/500*100%);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gray-border);
+}
+
+.events-swiper__marking {
+  width: 99%;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--gray-p);
+}
+
+.events-swiper__text {
+  margin-bottom: 64px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--gray-p);
+}
+
+.events-swiper__transition {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--violet);
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.events-swiper__transition::after  {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--violet);
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.events-swiper__transition:focus-visible {
+  padding: 4px 8px;
+  outline: none;
+  background: var(--violet);
+  color: var(--white);
+}
+
+.events-swiper__transition:focus-visible::after {
+  width: calc(87/103*100%);
+  bottom: 4px;
+  left: 8px;
+  background-color: var(--white);
+}
+
+.events-swiper__transition:hover{
+  color: var(--colorPurpleActive);
+}
+
+.events-swiper__transition:hover::after {
+  background-color: var(--colorPurpleActive);
+}
+
+.events-swiper__transition:active{
+  color: var(--gray-p);
+}
+
+.events-swiper__transition:active::after {
+  background-color: var(--gray-p);
+}
+
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  right: -25px;
+}
+
+.events-swiper__next, .events-swiper__prev  {
+  width: 50px;
+  height: 50px;
+}
+
+.events-swiper__svg path  {
+  fill: var(--gray-svg-color);
+  -webkit-transition: fill .3s ease-in-out;
+  -o-transition: fill .3s ease-in-out;
+  transition: fill.3s ease-in-out;
+}
+
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  left: -25px;
+}
+
+.svg:focus svg  {
+  border: 2px solid var(--violet);
+  border-radius: 50%;
+}
+
+.svg:hover svg  path{
+  fill: var(--violet-svg);
+}
+
+.svg:active svg  path{
+  fill: var(--violet-svg);
+}
+
+.svg:active svg  {
+  border: 2px solid var(--violet);
+  border-radius: 50%;
+}

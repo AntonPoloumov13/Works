@@ -1,0 +1,51 @@
+:root {
+  --white:#ffffff;
+  --black:#000000;
+  --gray:#6666;
+  --gray-color:#969696;
+  --gray-lite:#666666;
+  --gray-lite-lite:#999999;
+  --violet: #9D5CD0;
+  --gray-p: #333333;
+  --gray-border: #999999;
+  --violet-lite: #C283F3;
+  --gray-border2: #CACACA;
+  --colorPurpleActive: #7943A4;
+  --violet-svg: #D1A9F0;
+  --gray-svg-color:#ECECEC;
+}
+
+.footer-container {
+  padding: 47px 30px 46.5px 30px;
+  background-color: var(--black);
+}
+
+.footer-container__list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-container__svg svg path {
+  fill: var(--gray-border2);
+  transition: fill .2s ease-in-out;
+}
+
+.footer-container__svg svg:focus-visible  path {
+  fill: var(--white);
+}
+
+.footer-container__svg svg:hover path {
+  fill: var(--white);
+}
+
+.footer-container__svg svg:active path {
+  fill: var(--violet);
+}
+
+.footer-container__logo {
+  padding-top: 5px;
+  transition: opacity .2s ease-in-out;
+}
+
+.footer-container__logo:hover {
+  opacity: 0.5;
+}
