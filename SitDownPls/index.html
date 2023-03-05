@@ -40,7 +40,7 @@
         <div class="container header__container data-cont">
           <div class="flex header__midea" data-da=".container1220, 1220, last">
             <div class="header__custom">
-              <h3 class="header__title">Ваш регион:</h3>
+              <p class="header__title">Ваш регион:</p>
               <div class="header__select-container">
                 <select class="header__select" name="category" id="selectCustom">
                   <option value="Moscow" >Москва</option>
@@ -50,7 +50,7 @@
                 </select>
               </div>
             </div>
-            <div class="header__social">
+            <div class="header__social" tabindex="0">
               <svg width="22" height="22">
                 <use xlink:href="./img/svg/sprites.svg#tel"></use>
               </svg>
@@ -142,27 +142,27 @@
         </div>
       </div>
       <div class="header__container-center container">
-          <div class="header__container-form searchwrapper flex">
+          <div class="header__container-form searchwrapper">
               <form action="#!" class="header__glass-form flex">
                   <svg width="20" height="20" class="header__glass">
                     <use xlink:href="./img/svg/sprites.svg#glass"></use>
                   </svg>
                 <input type="text" placeholder="Я хочу купить..." aria-label="Поиск" class="header__glass-input">
+                <button class="header__button-form" aria-label="Поиск пользователя">
+                  <svg width="32" height="32">
+                    <use xlink:href="./img/svg/sprites.svg#form"></use>
+                  </svg>
+                </button>
               </form>
-              <button class="header__button-form" aria-label="Поиск пользователя">
-                <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#form"></use>
-                </svg>
-              </button>
           </div>
           <div class="header__select-container2">
             <select class="header__select2" name="category" id="selectCustomForm">
                   <optgroup label="">
-                    <option value="Category" >Категория</option>
+                    <option  value="Category" >Категория</option>
                     <option value="Sofas" >Диваны</option>
                     <option value="armchairs">Кресла</option>
-                    <option value="Puffs">Пуфы</option>
                     <option value="Beds">Кровати</option>
+                    <option value="Puffs">Пуфы</option>
                     <option value="Cabinets">Тумбы</option>
                   </optgroup>
                   <optgroup label="">
@@ -174,35 +174,35 @@
             </select>
           </div>
           <div class="header__users"  data-da=".data-cont, 1220, last">
-            <ul class="header__users-list flex" data-da=".padding, 991, last" aria-label="Список пользователя и корзина">
-              <li class="header__users-item">
-                <a class="header__button-users" aria-label="Вход в личный кабинет">
+            <div class="header__users-list flex" data-da=".padding, 991, last">
+              <div class="header__users-item">
+                <a href="#!" class="header__button-users" aria-label="Вход в личный кабинет">
                   <svg width="26" height="28" >
                     <use xlink:href="./img/svg/sprites.svg#user"></use>
                   </svg>
                 </a>
-              </li>
-              <li class="header__users-shop">
-                <a class="header__button-users" aria-label="Просмотреть корзину">
+              </div>
+              <div class="header__users-shop">
+                <a href="#!" class="header__button-users" aria-label="Просмотреть корзину">
                   <svg width="30" height="28">
                     <use xlink:href="./img/svg/sprites.svg#shop"></use>
                   </svg>
-                  <span>0</span>
                 </a>
-              </li>
-            </ul>
+                <span>0</span>
+              </div>
+            </div>
           </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <div class="hero">
         <div class="hero__container">
           <div class="hero__swiper swiper">
               <div class="hero__container-content swiper-wrapper">
                <div class="hero__container-sol slide-1 swiper-slide swiper-lazy" >
                   <div class="container">
                     <div class="hero__body ">
-                      <h2 class="hero__title">Скидка 15% <span>на первую покупку</span></h2>
+                      <h1 class="hero__title">Скидка 15% <span>на первую покупку</span></h1>
                       <a class="hero__btn btn disabled" href="#!"
                         aria-label="Перейдите по ссылке если хотите получить скидку 15% на первую покупку">Получить!
                       </a>
@@ -241,7 +241,7 @@
             </a>
             </div>
         </div>
-      </section>
+      </div>
       <section class="offer">
         <div class="offer__container container">
           <div class="offer__container-position flex">
@@ -570,7 +570,7 @@
       <section class="oxford">
         <div class="oxford__container">
           <div class="oxford__content container">
-            <h1 class="oxford__title">Оксфорд 1950</h1>
+            <h2 class="oxford__title">Оксфорд 1950</h2>
             <p class="oxford__text">Новая коллекция изысканных кресел </p>
             <a href="#!" class="btn oxford__btn" aria-label="Нажмите чтобы ознакомиться">Ознакомиться</a>
           </div>
@@ -734,38 +734,38 @@
             <ul class="helpful__slide-list swiper-wrapper">
               <li class="helpful__slide-item swiper-slide">
                 <div class="helpful__slide-img slide1"></div>
-                <article class="helpful__card">
+                <div class="helpful__card">
                   <p class="helpful__card-text">И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?</p>
                   <a href="#!" class="helpful__card-btn btn-click">Читать</a>
-                </article>
+                </div>
               </li>
               <li class="helpful__slide-item swiper-slide">
                 <div class="helpful__slide-img slide2"></div>
-                <article class="helpful__card">
+                <div class="helpful__card">
                   <p class="helpful__card-text text-margin">Как принято считать, некоторые особенности приносят несомненную пользу обществу?</p>
                   <a href="#!" class="helpful__card-btn btn-click">Читать</a>
-                </article>
+                </div>
               </li>
               <li class="helpful__slide-item swiper-slide">
                 <div class="helpful__slide-img slide3"></div>
-                <article class="helpful__card">
+                <div class="helpful__card">
                   <p class="helpful__card-text text-margin">Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?</p>
                   <a href="#!" class="helpful__card-btn btn-click">Читать</a>
-                </article>
+                </div>
               </li>
               <li class="helpful__slide-item swiper-slide">
                 <div class="helpful__slide-img slide4"></div>
-                <article class="helpful__card">
+                <div class="helpful__card">
                   <p class="helpful__card-text">Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?</p>
                   <a href="#!" class="helpful__card-btn btn-click">Читать</a>
-                </article>
+                </div>
               </li>
               <li class="helpful__slide-item swiper-slide">
                 <div class="helpful__slide-img slide5"></div>
-                <article class="helpful__card">
+                <div class="helpful__card">
                   <p class="helpful__card-text text-margin">Как принято считать, некоторые особенности приносят несомненную пользу обществу?</p>
                   <a href="#!" class="helpful__card-btn btn-click">Читать</a>
-                </article>
+                </div>
               </li>
             </ul>
           </div>
@@ -812,22 +812,22 @@
               <img src="./img/logo1920.svg" alt="Логотип">
             </a>
             <ul class="footer__social flex">
-              <li>
-                <a href="#!">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">
                   <svg width="30" height="30">
                     <use xlink:href="./img/svg/sprites.svg#fb"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#!">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">
                   <svg width="30" height="30">
                     <use xlink:href="./img/svg/sprites.svg#vk"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#!">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">
                   <svg width="30" height="30">
                     <use xlink:href="./img/svg/sprites.svg#inst"></use>
                   </svg>
@@ -836,7 +836,7 @@
             </ul>
           </div>
           <div class="footer__right flex">
-            <ul class="footer__right-list">
+            <ul class="footer__right-list first">
               <li>
                 <h3 class="footer__right-title">О нас</h3>
               </li>
@@ -845,7 +845,7 @@
               <li class="footer__right-item">
                 <a href="#!">Блог</a></li>
             </ul>
-            <ul class="footer__right-list display-list">
+            <ul class="footer__right-list display-list second">
               <li>
                 <h3 class="footer__right-title">Услуги</h3>
               </li>
@@ -857,14 +857,14 @@
                  <a href="#!">Сборка и установка</a>
               </li>
             </ul>
-            <ul class="footer__right-list">
+            <ul class="footer__right-list third">
               <li><h3 class="footer__right-title">Связь с нами</h3></li>
               <li class="footer__right-item">
                 <a href="#!">Обратная связь</a></li>
               <li class="footer__right-item">
                 <a href="contacts.html">Контакты</a></li>
             </ul>
-            <ul class="footer__right-list display-list">
+            <ul class="footer__right-list display-list fourth">
              <li> <h3 class="footer__right-title">Сотрудничество</h3></li>
               <li class="footer__right-item">
                 <a href="supplier.html">Поставщикам</a></li>

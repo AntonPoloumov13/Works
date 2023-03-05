@@ -35,7 +35,7 @@
         <div class="container header__container data-cont">
           <div class="flex header__midea" data-da=".container1220, 1220, last">
             <div class="header__custom">
-              <h3 class="header__title">Ваш регион:</h3>
+              <p class="header__title">Ваш регион:</p>
               <div class="header__select-container">
                 <select class="header__select" name="category" id="selectCustom">
                   <option value="Moscow" >Москва</option>
@@ -45,7 +45,7 @@
                 </select>
               </div>
             </div>
-            <div class="header__social">
+            <div class="header__social" tabindex="0">
               <svg width="22" height="22">
                 <use xlink:href="./img/svg/sprites.svg#tel"></use>
               </svg>
@@ -137,55 +137,55 @@
         </div>
       </div>
       <div class="header__container-center container">
-          <div class="header__container-form searchwrapper flex">
+          <div class="header__container-form searchwrapper">
               <form action="#!" class="header__glass-form flex">
                   <svg width="20" height="20" class="header__glass">
                     <use xlink:href="./img/svg/sprites.svg#glass"></use>
                   </svg>
                 <input type="text" placeholder="Я хочу купить..." aria-label="Поиск" class="header__glass-input">
+                <button class="header__button-form" aria-label="Поиск пользователя">
+                  <svg width="32" height="32">
+                    <use xlink:href="./img/svg/sprites.svg#form"></use>
+                  </svg>
+                </button>
               </form>
-              <button class="header__button-form" aria-label="Поиск пользователя">
-                <svg width="32" height="32">
-                  <use xlink:href="./img/svg/sprites.svg#form"></use>
-                </svg>
-              </button>
           </div>
           <div class="header__select-container2">
             <select class="header__select2" name="category" id="selectCustomForm">
-              <optgroup label="">
-                <option value="Category" >Категория</option>
-                <option value="Sofas" >Диваны</option>
-                <option value="armchairs">Кресла</option>
-                <option value="Puffs">Пуфы</option>
-                <option value="Beds">Кровати</option>
-                <option value="Cabinets">Тумбы</option>
-              </optgroup>
-              <optgroup label="">
-                <option value="Dressers">Комоды</option>
-                <option value="Chairs">Стулья</option>
-                <option value="tables">Столы</option>
-                <option value="Accessories">Аксессуары</option>
-              </optgroup>
+                  <optgroup label="">
+                    <option  value="Category" >Категория</option>
+                    <option value="Sofas" >Диваны</option>
+                    <option value="armchairs">Кресла</option>
+                    <option value="Beds">Кровати</option>
+                    <option value="Puffs">Пуфы</option>
+                    <option value="Cabinets">Тумбы</option>
+                  </optgroup>
+                  <optgroup label="">
+                    <option value="Dressers">Комоды</option>
+                    <option value="Chairs">Стулья</option>
+                    <option value="tables">Столы</option>
+                    <option value="Accessories">Аксессуары</option>
+                  </optgroup>
             </select>
           </div>
           <div class="header__users"  data-da=".data-cont, 1220, last">
-            <ul class="header__users-list flex" data-da=".padding, 991, last" aria-label="Список пользователя и корзина">
-              <li class="header__users-item">
-                <a class="header__button-users" aria-label="Вход в личный кабинет">
+            <div class="header__users-list flex" data-da=".padding, 991, last">
+              <div class="header__users-item">
+                <a href="#!" class="header__button-users" aria-label="Вход в личный кабинет">
                   <svg width="26" height="28" >
                     <use xlink:href="./img/svg/sprites.svg#user"></use>
                   </svg>
                 </a>
-              </li>
-              <li class="header__users-shop">
-                <a class="header__button-users" aria-label="Просмотреть корзину">
+              </div>
+              <div class="header__users-shop">
+                <a href="#!" class="header__button-users" aria-label="Просмотреть корзину">
                   <svg width="30" height="28">
                     <use xlink:href="./img/svg/sprites.svg#shop"></use>
                   </svg>
-                  <span>0</span>
                 </a>
-              </li>
-            </ul>
+                <span>0</span>
+              </div>
+            </div>
           </div>
       </div>
     </header>
@@ -227,22 +227,22 @@
               <img src="./img/logo1920.svg" alt="Логотип">
             </a>
             <ul class="footer__social flex">
-              <li>
-                <a href="#!">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">
                   <svg width="30" height="30">
                     <use xlink:href="./img/svg/sprites.svg#fb"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#!">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">
                   <svg width="30" height="30">
                     <use xlink:href="./img/svg/sprites.svg#vk"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="#!">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">
                   <svg width="30" height="30">
                     <use xlink:href="./img/svg/sprites.svg#inst"></use>
                   </svg>
@@ -251,18 +251,18 @@
             </ul>
           </div>
           <div class="footer__right flex">
-            <ul class="footer__right-list">
+            <ul class="footer__right-list first">
               <li>
-                <h3 class="footer__right-title">О нас</h3>
+                <h2 class="footer__right-title">О нас</h2>
               </li>
               <li class="footer__right-item">
                 <a href="#!">О компании</a></li>
               <li class="footer__right-item">
                 <a href="#!">Блог</a></li>
             </ul>
-            <ul class="footer__right-list display-list">
+            <ul class="footer__right-list display-list second">
               <li>
-                <h3 class="footer__right-title">Услуги</h3>
+                <h2 class="footer__right-title">Услуги</h2>
               </li>
               <li class="footer__right-item">
                 <a href="#!">Доставка</a></li>
@@ -272,15 +272,15 @@
                  <a href="#!">Сборка и установка</a>
               </li>
             </ul>
-            <ul class="footer__right-list">
-              <li><h3 class="footer__right-title">Связь с нами</h3></li>
+            <ul class="footer__right-list third">
+              <li><h2 class="footer__right-title">Связь с нами</h2></li>
               <li class="footer__right-item">
                 <a href="#!">Обратная связь</a></li>
               <li class="footer__right-item">
                 <a href="contacts.html">Контакты</a></li>
             </ul>
-            <ul class="footer__right-list display-list">
-             <li> <h3 class="footer__right-title">Сотрудничество</h3></li>
+            <ul class="footer__right-list display-list fourth">
+             <li> <h2 class="footer__right-title">Сотрудничество</h2></li>
               <li class="footer__right-item">
                 <a href="supplier.html">Поставщикам</a></li>
               <li class="footer__right-item">
@@ -295,7 +295,7 @@
       <div class="footer__bottom">
         <div class="container footer__bottom-text ">
           <span>
-            SDP®   2011-2021
+            SDP® <span class="footer__bottom-span">2011-2021</span>
           </span>
         </div>
       </div>
