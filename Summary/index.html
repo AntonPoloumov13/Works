@@ -14,7 +14,7 @@
   <!-- Пример работы галереи fslightbox <a data-fslightbox="gallery" class="furniture-row__item" href="./img/furniture-8.jpg"><img src="./img/furniture-8.jpg" alt="Картинка"></a> -->
   <script defer src="./resources/gallery-fslightbox/fslightbox.js"></script>
   <script defer src="./js/main.js"></script>
-  <title>Название сайта</title>
+  <title>Антон Полоумов</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
               <a aria-label="Портфолио" href="#Портфолио">Портфолио</a>
             </li>
             <li class="header__item">
-              <a aria-label="Контакты" href="#!">Контакты</a>
+              <a aria-label="Контакты" href="#Контакты">Контакты</a>
             </li>
           </ul>
           <button class="header__exit-menu"></button>
@@ -144,30 +144,111 @@
         <div class="portfolio__container container">
           <h2 class="portfolio__title title">Портфолио</h2>
           <div class="portfolio__content flex">
-            <div class="portfolio__card">
-              <div class="portfolio__card-img">
-                <picture>
-                  <source media="(max-width: 400px)" srcset="" type="image/png">
-                  <img src="./img/SitDownPls.png" alt="">
-                  </picture>
+            <div class="portfolio__card site1">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                  SitDownPls
+                </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/SitDownPls/index.html">
+                  Смотреть проект
+                </a>
               </div>
-              <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/SitDownPls/index.html"></a>
             </div>
-            <div class="portfolio__card">
-              <div class="portfolio__card-img">
-                <picture>
-                  <source media="(max-width: 400px)" srcset="" type="image/png">
-                  <img src="./img/SitDownPls.png" alt="">
-                  </picture>
+            <div class="portfolio__card site2">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                 Blanchard
+                </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/Blanchard">
+                  Смотреть проект
+                </a>
               </div>
-              <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/SitDownPls/index.html"></a>
+            </div>
+            <div class="portfolio__card site3">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                  High-pass
+                 </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/High-pass/">
+                  Смотреть проект
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__card site4">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                  SELFMADE
+                 </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/SELFMADE/">
+                  Смотреть проект
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__card site5">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                  Курсы 3D моделирования
+                 </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/Courses/">
+                  Смотреть проект
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__card site6">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                  Деньги под залог
+                 </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/Zalog/">
+                  Смотреть проект
+                </a>
+              </div>
+            </div>
+            <div class="portfolio__card site7">
+              <div class="portfolio__card-content">
+                <h2 class="portfolio__text">
+                  Евклид
+                 </h2>
+                <a class="portfolio__card-link" href="https://antonpoloumov13.github.io/Works/Evklid/">
+                  Смотреть проект
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="Контакты">
       <div class="footer__container container">
+        <h2 class="footer__contacts-title title">Контакты</h2>
+        <div class="footer__contacts">
+          <ul class="footer__contacts-list" aria-label="Список контактов">
+            <li class="footer__contacts-item">
+              <h3>Номер телефона</h3>
+              <a href="tel:+79370745347" aria-label="Мой номер">+79370745347</a>
+            </li>
+            <li class="footer__contacts-item">
+              <h3>Почта</h3>
+              <a href="mailto:ma123zda@rambler.ru" aria-label="Моя почта">ma123zda@rambler.ru</a>
+            </li>
+          </ul>
+          <ul class="footer__contacts-social" aria-label="Список социальных сетей">
+            <li class="footer__social-item">
+              <a href="https://t.me/AntonPoloumov">
+                <svg width="50" height="50">
+                <use xlink:href="./img/svg/sprites.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://t.me/AntonPoloumov">
+                <svg width="50" height="50">
+                <use xlink:href="./img/svg/sprites.svg#githab"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>
