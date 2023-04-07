@@ -1,4 +1,4 @@
-const menu = document.querySelector(".header__menu");
+const menu = document.querySelector(".header__nav");
 
 document.addEventListener("click", function (e) {
   if(e.target.closest(".burger")) {
@@ -9,8 +9,9 @@ document.addEventListener("click", function (e) {
     menu.classList.remove("menu-active")
     document.body.style.overflow = "";
   }
-  if (e.target.closest(".nav__link")) {
+  if (e.target.closest(".header__link")) {
     menu.classList.remove("menu-active")
     document.body.style.overflow = "";
   }
 })
+

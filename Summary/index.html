@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./css/main-min.css">
   <!-- Пример работы галереи fslightbox <a data-fslightbox="gallery" class="furniture-row__item" href="./img/furniture-8.jpg"><img src="./img/furniture-8.jpg" alt="Картинка"></a> -->
   <script defer src="./resources/gallery-fslightbox/fslightbox.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+  <script defer src="./js/modules/scroll.js"></script>
   <script defer src="./js/main.js"></script>
   <title>Антон Полоумов</title>
 </head>
@@ -22,24 +24,37 @@
     <header class="header">
       <div class="header__container container">
         <div class="header__menu flex">
-          <a class="header__logo" href="#!">
+          <div class="header__burger">
+            <button class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <a class="header__logo" href="#!" data-da=".header__nav-item, 991, last">
             <img src="./img/photo1.png" alt="Фотография">
           </a>
-          <ul class="header__list flex" aria-label="Список функционала">
+          <div class="header__nav">
+            <div class="header__nav-content">
+              <div  class="header__nav-item">
+                <button class="header__exit-menu"></button>
+              </div>
+            </div>
+          </div>
+          <ul class="header__list flex" aria-label="Список функционала" data-da=".header__nav-content, 991, last">
             <li class="header__item">
-              <a href="#Обомне" aria-label="Обо мне">Обо мне</a>
+              <a class="header__link" href="#Обомне" aria-label="Обо мне">Обо мне</a>
             </li>
             <li class="header__item">
-              <a aria-label="Скиллы" href="#Скиллы">Скиллы</a>
+              <a  class="header__link" aria-label="Скиллы" href="#Скиллы">Скиллы</a>
             </li>
             <li class="header__item">
-              <a aria-label="Портфолио" href="#Портфолио">Портфолио</a>
+              <a class="header__link" aria-label="Портфолио" href="#Портфолио">Портфолио</a>
             </li>
             <li class="header__item">
-              <a aria-label="Контакты" href="#Контакты">Контакты</a>
+              <a class="header__link" aria-label="Контакты" href="#Контакты">Контакты</a>
             </li>
           </ul>
-          <button class="header__exit-menu"></button>
         </div>
       </div>
     </header>
@@ -65,84 +80,86 @@
         <div class="about__container container">
           <div class="about__content">
             <h2 class="about__title title">Обо мне</h2>
-            <ul class="about__list">
-              <li class="about__item">
-                <p class="about__text">
-                  Привет, я Антон - HTML - Верстальщик | Frontend-разработчик из Самары.
-                </p>
-              </li>
-              <li class="about__item">
-                <p class="about__text">
-                  Моя цель как разработчика - применить все свои навыки в IT и устранять неполадки для лучшей реализации видения компании.
-                  Я стремлюсь не стоять на месте, а продолжать свое саморазвитие как личное, так и в компании, разрабатывая оптимальные подходы, которые помогут в решении проблем, обычно возникающие в разработке.
-                  Я командный игрок, готов к любым изменениям и адаптации.
-                  Нацеленность на результат, желаниеосваивать новые технологии и инструменты.
-                </p>
-              </li>
-            </ul>
-            <div class="about__content birds-container">
-              <div class="birds">
-                <div class="birds__hatdove">
-                  <div class="birds__hatdove-shadow"></div>
-                  <div class="birds__hatdove-head">
-                    <div class="birds__hatdove-hat"></div>
-                    <div class="birds__hatdove-forehead"></div>
-                    <div class="birds__hatdove-eye"></div>
-                    <div class="birds__hatdove-eye"></div>
-                    <div class="birds__hatdove-beak"></div>
+            <div class="about__content-item">
+              <ul class="about__list">
+                <li class="about__item">
+                  <p class="about__text">
+                    Привет, я Антон - HTML - Верстальщик | Frontend-разработчик из Самары.
+                  </p>
+                </li>
+                <li class="about__item">
+                  <p class="about__text">
+                    Моя цель как разработчика - применить все свои навыки в IT и устранять неполадки для лучшей реализации видения компании.
+                    Я стремлюсь не стоять на месте, а продолжать свое саморазвитие как личное, так и в компании, разрабатывая оптимальные подходы, которые помогут в решении проблем, обычно возникающие в разработке.
+                    Я командный игрок, готов к любым изменениям и адаптации.
+                    Нацеленность на результат, желаниеосваивать новые технологии и инструменты.
+                  </p>
+                </li>
+              </ul>
+              <div class="about__content birds-container">
+                <div class="birds">
+                  <div class="birds__hatdove">
+                    <div class="birds__hatdove-shadow"></div>
+                    <div class="birds__hatdove-head">
+                      <div class="birds__hatdove-hat"></div>
+                      <div class="birds__hatdove-forehead"></div>
+                      <div class="birds__hatdove-eye"></div>
+                      <div class="birds__hatdove-eye"></div>
+                      <div class="birds__hatdove-beak"></div>
+                    </div>
+                    <div class="birds__hatdove-backwing"></div>
+                    <div class="birds__circles-1"></div>
+                    <div class="birds__hatdove-backleg">
+                      <div class="birds__curly"></div>
+                    </div>
+                    <div class="birds__hatdove-body"></div>
+                    <div class="birds__hatdove-frontleg">
+                      <div class="birds__curly"></div>
+                    </div>
+                    <div class="birds__hatdove-frontwing"></div>
+                    <div class="birds__circles-2"></div>
+                    <div class="birds__hatdove-frontwing-finger"></div>
+                    <div class="birds__hatdove-frontwing-finger"></div>
+                    <div class="birds__hatdove-frontwing-finger"></div>
                   </div>
-                  <div class="birds__hatdove-backwing"></div>
-                  <div class="birds__circles-1"></div>
-                  <div class="birds__hatdove-backleg">
-                    <div class="birds__curly"></div>
+                  <div class="birds__table">
+                    <div class="birds__table-shadow"></div>
                   </div>
-                  <div class="birds__hatdove-body"></div>
-                  <div class="birds__hatdove-frontleg">
-                    <div class="birds__curly"></div>
+                  <div class="birds__laptop"></div>
+                  <div class="birds__laptop">
+                    <div class="birds__monitor">
+                      <div class="birds__code"></div>
+                    </div>
                   </div>
-                  <div class="birds__hatdove-frontwing"></div>
-                  <div class="birds__circles-2"></div>
-                  <div class="birds__hatdove-frontwing-finger"></div>
-                  <div class="birds__hatdove-frontwing-finger"></div>
-                  <div class="birds__hatdove-frontwing-finger"></div>
-                </div>
-                <div class="birds__table">
-                  <div class="birds__table-shadow"></div>
-                </div>
-                <div class="birds__laptop"></div>
-                <div class="birds__laptop">
-                  <div class="birds__monitor">
-                    <div class="birds__code"></div>
-                  </div>
-                </div>
-                <div class="birds__coffee"></div>
-                <div class="birds__feather"></div>
-                <div class="birds__feather"></div>
-                <div class="birds__rundove-shadow"></div>
-                <div class="birds__rundove">
-                  <div class="birds__rundove-backwing">
-                    <div class="birds__finger"></div>
-                    <div class="birds__finger"></div>
-                    <div class="birds__finger"></div>
-                    <div class="birds__circles"></div>
-                  </div>
-                  <div class="birds__rundove-head">
-                    <div class="birds__rundove-eye"></div>
-                    <div class="birds__rundove-eye"></div>
-                    <div class="birds__rundove-beak"></div>
-                  </div>
-                  <div class="birds__rundove-backleg">
-                    <div class="birds__curly"></div>
-                  </div>
-                  <div class="birds__rundove-body"></div>
-                  <div class="birds__rundove-frontleg">
-                    <div class="birds__curly"></div>
-                  </div>
-                  <div class="birds__rundove-frontwing">
-                    <div class="birds__finger"></div>
-                    <div class="birds__finger"></div>
-                    <div class="birds__finger"></div>
-                    <div class="birds__circles"></div>
+                  <div class="birds__coffee"></div>
+                  <div class="birds__feather"></div>
+                  <div class="birds__feather"></div>
+                  <div class="birds__rundove-shadow"></div>
+                  <div class="birds__rundove">
+                    <div class="birds__rundove-backwing">
+                      <div class="birds__finger"></div>
+                      <div class="birds__finger"></div>
+                      <div class="birds__finger"></div>
+                      <div class="birds__circles"></div>
+                    </div>
+                    <div class="birds__rundove-head">
+                      <div class="birds__rundove-eye"></div>
+                      <div class="birds__rundove-eye"></div>
+                      <div class="birds__rundove-beak"></div>
+                    </div>
+                    <div class="birds__rundove-backleg">
+                      <div class="birds__curly"></div>
+                    </div>
+                    <div class="birds__rundove-body"></div>
+                    <div class="birds__rundove-frontleg">
+                      <div class="birds__curly"></div>
+                    </div>
+                    <div class="birds__rundove-frontwing">
+                      <div class="birds__finger"></div>
+                      <div class="birds__finger"></div>
+                      <div class="birds__finger"></div>
+                      <div class="birds__circles"></div>
+                    </div>
                   </div>
                 </div>
               </div>
