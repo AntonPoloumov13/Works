@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Bedas Neue Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('../../fonts/BebasNeue-Regular.ttf'),
+       url("../../fonts/BebasNeue-Regular.woff2") format("woff2"),
+       url("../../fonts/BebasNeue-Regular.woff") format("woff");
+}
+
+
+
+@font-face {
+  font-family: 'Bedas Neue bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('../../fonts/Bebas Neue-bold.ttf'),
+       url("../../fonts/Bebas Neue-bold.woff2") format("woff2"),
+       url("../../fonts/Bebas Neue-bold.woff") format("woff");
+}
+
+
+
+/* Начертания
+
+100 - thin
+200 - extra light
+300 - light
+400 - regular ( normal )
+500 - medium
+600 - semi bold
+700 - bold
+800 - extra bold
+900 - black
+
+*/

@@ -1,0 +1,131 @@
+.portfolio  {
+  position: relative;
+  &__title  {
+    display: flex;
+    justify-content: center;
+  }
+  &__content  {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &__card {
+    position: relative;
+    flex: 0 0 435px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: border-radius .2s ease-in-out;
+    @media (max-width:991px) {
+      flex: 0 0 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      border: 2px solid transparent;
+      background-color: rgba(0, 0, 0, 0.6);
+      transition: border-radius .2s ease-in-out, border-color .2s ease-in-out;
+    }
+    @media (any-hover: hover) {
+    &:hover {
+    border-radius: 100px;
+    &::before {
+      border-color: var(--hover);
+      border-radius: 100px;
+    }
+    }
+    }
+    &:focus-visible  {
+      outline: none;
+      &::before {
+        border-color: var(--hover);
+      }
+    }
+  }
+  & .site1  {
+    background-image: url("../../img/SitDownPls.png");
+  }
+  & .site2  {
+    background-image: url("../../img/Blanchard.png");
+  }
+  & .site3  {
+    background-image: url("../../img/HighPass.png");
+  }
+  & .site4  {
+    background-image: url("../../img/SELFMADE.png");
+  }
+  & .site5  {
+    background-image: url("../../img/Courses.png");
+  }
+  & .site6  {
+    background-image: url("../../img/Zalog.png");
+  }
+  & .site7  {
+    background-image: url("../../img/Evklid.png");
+  }
+  &__card-content {
+    position: relative;
+    padding: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    z-index: 2;
+    @media (max-width:600px) {
+      padding: 20px;
+    }
+  }
+  &__card-img {
+    overflow: hidden;
+  }
+  &__text {
+    flex: 1 1 auto;
+    font-family: "Bedas Neue bold";
+    font-size: 40px;
+    line-height: 36px;
+    color: var(--white);
+    @media (max-width:991px) {
+      font-size: 30px;
+    }
+  }
+  &__card-link  {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    line-height: 22px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    border-radius: 5px;
+    color: var(--white);
+    background: var(--black);
+    transition: color .2s ease-in-out, background .2s ease-in-out;
+    &::after  {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--hover);
+      }
+      }
+      &:focus-visible {
+        outline: none;
+        background: var(--hover);
+      }
+      &:active {
+        color: var(--active);
+       transition-duration: .1s;
+      }
+  }
+}
