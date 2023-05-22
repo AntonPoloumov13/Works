@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section class="main ">
+            <div class="container">
+                <h1>Ученики</h1>
+
+                <form class="mb-3" action="" id="point-add-student">
+                  <h2>Добавить ученика</h2>
+                    <div class="flex">
+                        <div class="mb-3  input-box">
+                            <!-- Фамилия -->
+                            <input data-required="true" data-max-length="20" data-min-length="2" class="form-control"
+                                type="text" placeholder="Фамилия" id="input-lastName">
+                        </div>
+                        <div class="mb-3 input-box">
+                            <!-- Имя -->
+                            <input data-required="true" data-max-length="20" data-min-length="2" class="form-control"
+                                type="text" placeholder="Имя" id="input-name">
+                        </div>
+                        <div class="mb-3 input-box">
+                            <!-- Отчество -->
+                            <input data-required="false" data-max-length="20" class="form-control" type="text"
+                                placeholder="Отчество" id="input-patronymic">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="mb-3 input-box">
+                            <!-- Год начала учебы число -->
+                            <input data-required="true" data-max-length="20" data-min-length="2" class="form-control"
+                                type="number" placeholder="Год начала учебы" id="input-workStart">
+                        </div>
+                        <div class="mb-3 input-box">
+                            <!-- Дата рождения  -->
+                            <input data-required="true" class="form-control" type="date" id="input-birthDate">
+                        </div>
+                        <div class="mb-3 input-box">
+                            <!-- Факультет -->
+                            <input data-required="true" data-max-length="20" data-min-length="2" class="form-control"
+                                type="text" placeholder="Факультет" id="input-post">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Добавить</button>
+
+                </form>
+
+                <form action="#" id="filter-form" class="mb-3">
+                  <h2>Фильтрация</h2>
+                  <input type="text" id="filter-form__fio-inpt" class="form-control mb-3" placeholder="ФИО">
+                  <input type="number" id="filter-form__birthday" class="form-control mb-3" placeholder="Год рождения">
+                  <input type="number" id="filter-form__workstart" class="form-control mb-3" placeholder="Год начала обучения">
+                  <input type="text" id="filter-form__faculty-inpt" class="form-control" placeholder="Факультет">
+                </form>
+
+                <table class="table studentsTable table-dark table-striped-columns">
+                    <th data-column="fio">ФИО</th>
+                    <th data-column="birthDate">Дата рождения</th>
+                    <th data-column="workStart">Время учебы</th>
+                    <th data-column="post">Факультет</th>
+                    <tbody id="students-list"></tbody>
+                </table>
+            </div>
+        </section>
+
+
+    </body>
+
+    <script defer src="main.js" type="module"></script>
+    <script defer src="validator.js" type="module"></script>
+    <script defer src="post.js"></script>
+    <!-- <script src="js/db.js"></script> -->
+    <script  src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script
+        src="https://unpkg.com/just-validate-plugin-date@1.2.0/dist/just-validate-plugin-date.production.min.js"></script>
+
+</html>
