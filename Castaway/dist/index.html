@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/.woff" as="font">
+  <link rel="preload" href="./fonts/.woff2" as="font">
+  <link rel="stylesheet" href="./resources/choices/choices.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <!-- Пример работы галереи fslightbox <a data-fslightbox="gallery" class="furniture-row__item" href="./img/furniture-8.jpg"><img src="./img/furniture-8.jpg" alt="Картинка"></a> -->
+  <script defer src="./resources/gallery-fslightbox/fslightbox.js"></script>
+  <script defer src="./resources/validate/inputmask.js"></script>
+  <script defer src="./resources/validate/just-validate.min.js"></script>
+  <script defer src="./js/main.js"></script>
+  <title>Castaway</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__link-logo logo" href="index.html">
+          Castaway
+        </a>
+        <div class="header__menu">
+          <ul class="header__list flex nav__link" aria-label="Cписок">
+            <li class="header__item">
+              <a class="header__item-link link" aria-label="Home" href="#Home">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link link" aria-label="Episode" href="#Episodes">Episodes</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link link" aria-label="About" href="#About">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link link" aria-label="Reviews" href="#Reviews">Reviews</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link link" aria-label="Contact" href="#Contact">Contact</a>
+            </li>
+          </ul>
+          <button class="header__exit-menu"></button>
+        </div>
+        <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="main" id="Home">
+        <div class="container main__container">
+          <div class="main__card flex">
+            <div class="main__img">
+              <picture>
+              <img src="./img/section1.png" alt="Картинка">
+              </picture>
+            </div>
+            <div class="main__content">
+              <div class="main__content-top">
+                <h1 class="main__title">
+                  Take your podcast to the
+                  <span class="main__title-border">next</span> <span class="main__title-size">level</span>
+                </h1>
+              </div>
+              <div class="main__content-bottom">
+                <p class="main__content-text">Listen on</p>
+                <ul class="main__bottom-list flex">
+                  <li class="main__bottom-item">
+                    <a class="main__bottom-link social" href="#">
+                      <svg width="32" height="32">
+                      <use xlink:href="./img/svg/sprites.svg#spotify"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="main__bottom-item">
+                    <a class="main__bottom-link social" href="#">
+                      <svg width="32" height="32">
+                      <use xlink:href="./img/svg/sprites.svg#svg2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="main__bottom-item">
+                    <a class="main__bottom-link social" href="#">
+                      <svg c width="32" height="32" class="item1">
+                        <use xlink:href="./img/svg/sprites.svg#svg3"></use>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="main__bottom-item">
+                    <a class="main__bottom-link social focus" href="#">
+                      <svg  width="32" height="32" class="item2">
+                        <use xlink:href="./img/svg/sprites.svg#svg5"></use>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="main__bottom-item">
+                    <a class="main__bottom-link social" href="#">
+                      <svg  width="32" height="32">
+                        <use xlink:href="./img/svg/sprites.svg#svg4"></use>
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="episodes" id="Episodes">
+        <div class="container episodes__container">
+          <div class="episodes__container-top flex">
+            <h2 class="episodes__title title">Latest episodes</h2>
+            <button class="btn episodes__btn">View all episodes</button>
+          </div>
+          <div class="episodes__container-bottom">
+            <div class="episodes__content flex">
+              <div class="episodes__content-img">
+                <picture>
+                <img src="./img/episode1.png" alt="Картинка">
+                </picture>
+              </div>
+              <article class="episodes__content-text">
+                <span class="episodes__definition">Gear</span>
+                <span class="episodes__choice">Episode  3</span>
+                <h3 class="episodes__conten-title">Should you get outboard audio gear?</h3>
+                <p class="episodes__text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
+                <button class="btn episodes__content-btn">View Episode Details</button>
+              </article>
+            </div>
+            <div class="episodes__content flex">
+              <div class="episodes__content-img">
+                <picture>
+                <img src="./img/episode2.png" alt="Картинка">
+                </picture>
+              </div>
+              <article class="episodes__content-text">
+                <span class="episodes__definition">Tips & Tricks</span>
+                <span class="episodes__choice">Episode  2</span>
+                <h3 class="episodes__conten-title">Mic tricks to take you to the next level</h3>
+                <p class="episodes__text">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
+                <button class="btn episodes__content-btn">View Episode Details</button>
+              </article>
+            </div>
+            <div class="episodes__content flex">
+              <div class="episodes__content-img">
+                <picture>
+                <img src="./img/episode3.png" alt="Картинка">
+                </picture>
+              </div>
+              <article class="episodes__content-text">
+                <span class="episodes__definition">Gear</span>
+                <span class="episodes__choice">Episode  1</span>
+                <h3 class="episodes__conten-title">The best microphone under $200</h3>
+                <p class="episodes__text">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
+                <button class="btn episodes__content-btn">View Episode Details</button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="About" class="about">
+        <div class="container about__container">
+          <div class="about__top flex">
+            <div class="about__top-left">
+              <a href="#" class="about__top-button">
+              </a>
+              <span class="about__top-span span">Meet your host</span>
+              <h3 class="about__top-title">Jacob Paulaner</h3>
+              <p class="about__top-text">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+              <p class="about__top-text">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
+            </div>
+            <div class="about__top-img">
+              <picture>
+              <img src="./img/about.png" alt="Картинка">
+              </picture>
+            </div>
+          </div>
+          <div class="about__bottom flex">
+            <div class="about__bottom-left">
+              <span class="about__left-span span">Email Newsletter</span>
+              <h3 class="about__left-title">Subscribe for updates</h3>
+            </div>
+            <div class="about__bottom-form">
+              <form class="about__form" action="mail.php" method="post" enctype="multipart/form-data"                 aria-label="Форма чтобы отправить комментарий">
+                <input type="hidden" name="admin_email[]" value="exigonyashka@yandex.ru">
+                <input type="hidden" name="form_subject" value="Заявка с сайта">
+                <label class="about__form-label">
+                  <input type="text" class="about__form-name input-name form-input" data-validate-field="name" name="Имя" id="name" placeholder="Name">
+                </label>
+                <label class="about__form-label">
+                  <input type="email" class="about__form-email input-mail form-input" data-validate-field="email" name="email" id="post" placeholder="Email">
+                </label>
+                <button class="btn about__form-btn disabled">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Reviews" class="reviews">
+        <div class="container reviews__container">
+          <div class="reviews__cards">
+            <div class="reviews__card-item">
+              <ul class="reviews__item-star flex">
+                <li class="reviews__star-link">
+                  <img src="./img/star.png" alt="Рейтинг">
+               </li>
+               <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+                </li>
+                <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              </ul>
+              <h3 class="reviews__item-title">I can’t recommend this podcast enough</h3>
+              <p class="reviews__item-text">Betty Lacey</p>
+            </div>
+
+            <div class="reviews__card-item">
+              <ul class="reviews__item-star flex">
+                <li class="reviews__star-link">
+                  <img src="./img/star.png" alt="Рейтинг">
+               </li>
+               <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+                </li>
+                <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              </ul>
+              <h3 class="reviews__item-title">Jacob is the best in the business</h3>
+              <p class="reviews__item-text">Adam Driver</p>
+            </div>
+
+            <div class="reviews__card-item">
+              <ul class="reviews__item-star flex">
+                <li class="reviews__star-link">
+                  <img src="./img/star.png" alt="Рейтинг">
+               </li>
+               <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+                </li>
+                <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              </ul>
+              <h3 class="reviews__item-title">A wealth of audio knowledge</h3>
+              <p class="reviews__item-text">Marcus Brown</p>
+            </div>
+
+            <div class="reviews__card-item">
+              <ul class="reviews__item-star flex">
+                <li class="reviews__star-link">
+                  <img src="./img/star.png" alt="Рейтинг">
+               </li>
+               <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+                </li>
+                <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              </ul>
+              <h3 class="reviews__item-title">Every episode is a gem!</h3>
+              <p class="reviews__item-text">Jessica Knowl</p>
+            </div>
+
+            <div class="reviews__card-item">
+              <ul class="reviews__item-star flex">
+                <li class="reviews__star-link">
+                  <img src="./img/star.png" alt="Рейтинг">
+               </li>
+               <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+                </li>
+                <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              </ul>
+              <h3 class="reviews__item-title">Whoa whoa, let me take some notes!</h3>
+              <p class="reviews__item-text">Scott Adams</p>
+            </div>
+
+            <div class="reviews__card-item">
+              <ul class="reviews__item-star flex">
+                <li class="reviews__star-link">
+                  <img src="./img/star.png" alt="Рейтинг">
+               </li>
+               <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+                </li>
+                <li class="reviews__star-link">
+                <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              <li class="reviews__star-link">
+              <img src="./img/star.png" alt="Рейтинг">
+              </li>
+              </ul>
+              <h3 class="reviews__item-title">I’ve upped my game considerably since I started listening</h3>
+              <p class="reviews__item-text">Steven Blast</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="Contact">
+      <div class="footer__container container flex">
+        <div class="footer__left">
+          <a href="index.html" class="footer__left-logo logo">Castaway</a>
+          <ul class="footer__left-list flex" aria-label="Список социальных сетей">
+            <li class="footer__left-item">
+              <a href="#" class="footer__left-link" aria-label="Инста">
+                <svg width="24" height="24">
+                <use xlink:href="./img/svg/sprites.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__left-item">
+              <a href="#" class="footer__left-link" aria-label="Твиттер">
+                <svg width="24" height="24">
+                <use xlink:href="./img/svg/sprites.svg#twit"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__left-item">
+              <a href="#" class="footer__left-link" aria-label="Facbook">
+                <svg width="24" height="24">
+                <use xlink:href="./img/svg/sprites.svg#fac"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__center flex">
+          <ul class="footer__center-list one" aria-label="Cписок">
+            <li class="footer__center-tem">
+              <a class="footer__center-link link" aria-label="Home" href="#Home">Home</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="Episode" href="#Episodes">Episodes</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="About" href="#About">About</a>
+            </li>
+            <li class="footer__center-tem">
+              <a class="footer__center-link link" aria-label="Reviews" href="#Reviews">Reviews</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="Contact" href="#Contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer__center-list two" aria-label="Cписок">
+            <li class="footer__center-tem">
+              <a class="footer__center-link link" aria-label="Style Guide" href="#">Style Guide</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="Instructions" href="#">Instructions</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="Changelog" href="#">Changelog</a>
+            </li>
+            <li class="footer__center-tem">
+              <a class="footer__center-link link" aria-label="Credit" href="#">Credit</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="Powered by Webflow" href="#">Powered by Webflow</a>
+            </li>
+            <li class="footer__center-item">
+              <a class="footer__center-link link" aria-label="Licenses" href="#">Licenses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__right-list flex">
+            <li class="footer__right-item">
+              <a class="footer__right-link social" href="#">
+                <svg width="32" height="32">
+                <use xlink:href="./img/svg/sprites.svg#spotify"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__right-item">
+              <a class="footer__right-link social" href="#">
+                <svg width="32" height="32">
+                <use xlink:href="./img/svg/sprites.svg#svg2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__right-item">
+              <a class="footer__right-link social" href="#">
+                <svg c width="32" height="32" class="item1">
+                  <use xlink:href="./img/svg/sprites.svg#svg3"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="footer__right-item">
+              <a class="footer__right-link social focus" href="#">
+                <svg  width="32" height="32" class="item2">
+                  <use xlink:href="./img/svg/sprites.svg#svg5"></use>
+                  </svg>
+              </a>
+            </li>
+            <li class="footer__right-item">
+              <a class="footer__right-link social" href="#">
+                <svg  width="32" height="32">
+                  <use xlink:href="./img/svg/sprites.svg#svg4"></use>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
