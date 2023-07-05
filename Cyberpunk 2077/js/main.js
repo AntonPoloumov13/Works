@@ -1,0 +1,383 @@
+"use strict"
+
+window.onload = function () {
+
+  const main = document.querySelector(".main__sliders");
+
+if(main)  {
+  const swiper = new Swiper('.main__sliders', {
+    // loopAdditionalSlides: 3, // Добавляет количество слайдов которые будут склонированы после создания цикла
+    // centeredSlides: true, // центрирует активный слайд по центру а не слева
+    loop: true,
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    lazy: {
+      loadPrevNext: true,
+    },
+    // slidesPerGroup: 1,
+    // centeredSlides: true, // активный слайд будет в центре
+    // autoHeight: true,
+    direction: 'horizontal',
+    // speed: 500, // Автовоспроизведение
+    // autoplay: {
+    // delay: 5000,
+    // disableOnInteraction: false,
+    // },
+    // thumbs: { // Читаем ниже что даёт эта настройка
+    //   swiper: thumbsSwiper,
+    // },
+    pagination: {
+      el: '.hero__pagination',
+      clickable: true,
+      // dynamicBullets: true, // Если много кружков пагинации
+      // dynamicMainBullets: 3, // Показывает количество отображаемых кружков пагинаии при включеном dynamicBullets
+    },
+    allowTouchMove: false,
+    loop: true,
+    effect: 'fade',
+    speed: 2000,
+    autoplay: {
+      delay: 2000
+    },
+  });
+}
+
+
+
+// Обычная разметка слайдера
+
+// <div class="swiper">
+//   <div class="swiper-wrapper">
+//     <div class="swiper-slide">Slide 1</div>
+//     <div class="swiper-slide">Slide 2</div>
+//     <div class="swiper-slide">Slide 3</div>
+//   </div>
+//   <div class="swiper-pagination"></div>
+
+//   <div class="swiper-button-prev"></div>
+//   <div class="swiper-button-next"></div>
+
+//   <div class="swiper-scrollbar"></div>
+// </div>
+
+// Разметка слайдера с thumb. Этот слайдер выглядит как обычный слайдер в карточках товара в интернет магазине. Т.е один верхний слайдер с большой картинкой, и снизу под ним маленький слайдер с маленькими картинками. Так вот, каталог свайпер это основной, а thumbs свайпер второй слайдер. Инициализируем два слайдера, первому слайдеру пишем консту thumbsSwiper(можно и поменять) а второму слайдеру пишем в настройках thumb, другими словами связываем их. и все, всё работает
+
+/* <div class="wrapper">
+<div class="swiper catalog__swiper catalog-swiper">
+  <div class="swiper-wrapper catalog-swiper__wrapper">
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/01.jpg" alt="">
+    </div>
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/02.jpg" alt="">
+    </div>
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/03.jpg" alt="">
+    </div>
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/04.jpg" alt="">
+    </div>
+
+  </div>
+</div>
+<div class="swiper__thumbs swiper thumbs-swiper">
+  <div class="swiper-wrapper thumbs-swiper__wrapper">
+    <div class="swiper-slide thumbs-swiper__slide">
+      <img src="./img/01.jpg" alt="">
+    </div>
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/02.jpg" alt="">
+    </div>
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/03.jpg" alt="">
+    </div>
+    <div class="swiper-slide catalog-swiper__slide">
+      <img src="./img/04.jpg" alt="">
+    </div>
+  </div>
+</div>
+</div> */
+
+  const form = document.querySelector(".promotion__left")
+if(form)  {
+  new JustValidate('.promotion__card', {
+  colorWrong: "#FF6972",
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      strength: {
+        custom: '[а-яА-Я\d]',
+      },
+    },
+    tel: {
+      required: true,
+      function: (name, value) => {
+        const phone = selector.inputmask.unmaskedvalue()
+        return Number(phone) && phone.length === 10
+      }
+    },
+  },
+  messages: {
+    name: {
+      required: 'Введите ваше имя',
+      minLength: 'Минимальное количество букв - 2',
+      strength: 'Недопустимый формат',
+    },
+    name: 'Введите ваше имя',
+    email: 'Введите ваш Email'
+  },
+
+
+  // Отправка на почту
+  submitHandler: function (form, values, ajax) {
+    let formData = new FormData(form);
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log("Отправлено")
+        }
+      }
+    }
+
+    xhr.open("POST", "mail.php", true);
+    xhr.send(formData)
+
+    form.reset();
+  }
+});
+
+}
+const inputName = document.querySelector(".input-name");
+if(inputName) {
+  let banNumber = /[0-9]/g;
+  let banEnglishLetter = /[^a-zA-ZА-Яа-яЁё]/g;
+  inputName.oninput = function () {
+  this.value = this.value.replace(banNumber, "")
+  this.value = this.value.replace(banEnglishLetter, "")
+}
+inputName.addEventListener("change", function () {
+  let length = inputName.value.length
+  if (length >= 0) {
+    document.querySelector(".input-name").classList.add("form-label-done");
+  } else {
+    document.querySelector(".input-name").classList.remove("form-label-done");
+  }
+  if (document.querySelectorAll(".form-label-done").length == 2) {
+    document.querySelector(".promotion__btn").classList.remove("disabled")
+  }
+})
+document.querySelector(".input-mail").addEventListener("change", function () {
+  let length = inputName.value.length
+  if (length >= 0) {
+    document.querySelector(".input-mail").classList.add("form-label-done");
+  } else {
+    document.querySelector(".input-mail").classList.remove("form-label-done");
+  }
+  if (document.querySelectorAll(".form-label-done").length == 2) {
+    document.querySelector(".promotion__btn").classList.remove("disabled")
+  }
+})
+}
+
+
+/* Обязательно инпутам добавить name и проверь пути к mail.php в js и html
+
+
+<form action="mail.php" class="contacts__form" method="post" enctype="multipart/form-data">
+<h3 class="contacts__form-subtitle">Заказать обратный звонок</h3>
+<input type="hidden" name="admin_email[]" value="exigonyashka@yandex.ru">
+<input type="hidden" name="form_subject" value="Заявка с сайта">
+<label class="form-label margin-top"><input type="text" name="name" placeholder="Имя*" required
+    data-validate-field="name" id="name" aria-label="Введите своё имя"></label>
+<label class="form-label"><input type="tel" name="phone" placeholder="Телефон*" required
+    data-validate-field="tel" data-validate-rules="phone" id="tel"
+    aria-label="Введите свой телефон"></label>
+<button class="contacts__form-btn" type="submit">Заказать</button>
+</form>
+
+
+*/
+
+  function DynamicAdapt(type) {
+  this.type = type;
+}
+
+DynamicAdapt.prototype.init = function () {
+  const _this = this;
+  // массив объектов
+  this.оbjects = [];
+  this.daClassname = "_dynamic_adapt_";
+  // массив DOM-элементов
+  this.nodes = document.querySelectorAll("[data-da]");
+
+  // наполнение оbjects объктами
+  for (let i = 0; i < this.nodes.length; i++) {
+    const node = this.nodes[i];
+    const data = node.dataset.da.trim();
+    const dataArray = data.split(",");
+    const оbject = {};
+    оbject.element = node;
+    оbject.parent = node.parentNode;
+    оbject.destination = document.querySelector(dataArray[0].trim());
+    оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : "767";
+    оbject.place = dataArray[2] ? dataArray[2].trim() : "last";
+    оbject.index = this.indexInParent(оbject.parent, оbject.element);
+    this.оbjects.push(оbject);
+  }
+
+  this.arraySort(this.оbjects);
+
+  // массив уникальных медиа-запросов
+  this.mediaQueries = Array.prototype.map.call(this.оbjects, function (item) {
+    return '(' + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
+  }, this);
+  this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (item, index, self) {
+    return Array.prototype.indexOf.call(self, item) === index;
+  });
+
+  // навешивание слушателя на медиа-запрос
+  // и вызов обработчика при первом запуске
+  for (let i = 0; i < this.mediaQueries.length; i++) {
+    const media = this.mediaQueries[i];
+    const mediaSplit = String.prototype.split.call(media, ',');
+    const matchMedia = window.matchMedia(mediaSplit[0]);
+    const mediaBreakpoint = mediaSplit[1];
+
+    // массив объектов с подходящим брейкпоинтом
+    const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
+      return item.breakpoint === mediaBreakpoint;
+    });
+    matchMedia.addListener(function () {
+      _this.mediaHandler(matchMedia, оbjectsFilter);
+    });
+    this.mediaHandler(matchMedia, оbjectsFilter);
+  }
+};
+
+DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
+  if (matchMedia.matches) {
+    for (let i = 0; i < оbjects.length; i++) {
+      const оbject = оbjects[i];
+      оbject.index = this.indexInParent(оbject.parent, оbject.element);
+      this.moveTo(оbject.place, оbject.element, оbject.destination);
+    }
+  } else {
+    for (let i = 0; i < оbjects.length; i++) {
+      const оbject = оbjects[i];
+      if (оbject.element.classList.contains(this.daClassname)) {
+        this.moveBack(оbject.parent, оbject.element, оbject.index);
+      }
+    }
+  }
+};
+
+// Функция перемещения
+DynamicAdapt.prototype.moveTo = function (place, element, destination) {
+  element.classList.add(this.daClassname);
+  if (place === 'last' || place >= destination.children.length) {
+    destination.insertAdjacentElement('beforeend', element);
+    return;
+  }
+  if (place === 'first') {
+    destination.insertAdjacentElement('afterbegin', element);
+    return;
+  }
+  destination.children[place].insertAdjacentElement('beforebegin', element);
+}
+
+// Функция возврата
+DynamicAdapt.prototype.moveBack = function (parent, element, index) {
+  element.classList.remove(this.daClassname);
+  if (parent.children[index] !== undefined) {
+    parent.children[index].insertAdjacentElement('beforebegin', element);
+  } else {
+    parent.insertAdjacentElement('beforeend', element);
+  }
+}
+
+// Функция получения индекса внутри родителя
+DynamicAdapt.prototype.indexInParent = function (parent, element) {
+  const array = Array.prototype.slice.call(parent.children);
+  return Array.prototype.indexOf.call(array, element);
+};
+
+// Функция сортировки массива по breakpoint и place 
+// по возрастанию для this.type = min
+// по убыванию для this.type = max
+DynamicAdapt.prototype.arraySort = function (arr) {
+  if (this.type === "min") {
+    Array.prototype.sort.call(arr, function (a, b) {
+      if (a.breakpoint === b.breakpoint) {
+        if (a.place === b.place) {
+          return 0;
+        }
+
+        if (a.place === "first" || b.place === "last") {
+          return -1;
+        }
+
+        if (a.place === "last" || b.place === "first") {
+          return 1;
+        }
+
+        return a.place - b.place;
+      }
+
+      return a.breakpoint - b.breakpoint;
+    });
+  } else {
+    Array.prototype.sort.call(arr, function (a, b) {
+      if (a.breakpoint === b.breakpoint) {
+        if (a.place === b.place) {
+          return 0;
+        }
+
+        if (a.place === "first" || b.place === "last") {
+          return 1;
+        }
+
+        if (a.place === "last" || b.place === "first") {
+          return -1;
+        }
+
+        return b.place - a.place;
+      }
+
+      return b.breakpoint - a.breakpoint;
+    });
+    return;
+  }
+};
+
+const da = new DynamicAdapt("max");
+da.init();
+
+
+/*
+       Как работает: 
+       1) пишешь атрибут data-da в нём указываешь элемент куда он должен перейти 
+       2) разрешение, на котором это должно произойти 
+       3) и место куда оно перейдёт
+
+
+<div data-da=".div2, 1280, 1" class="div three">
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, itaque!</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque reiciendis quidem accusantium dolor sed eveniet doloribus ex impedit odit.</p>
+</div> 
+
+<div class="div2"></div>
+
+*/
+
+
+
+
+}
