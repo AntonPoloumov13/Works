@@ -5,20 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="../fonts/Poppins-Regular.woff" as="font">
-  <link rel="preload" href="../fonts/Poppins-Regular.woff2" as="font">
-  <link rel="preload" href="../fonts/Poppins-Bold.woff" as="font">
-  <link rel="preload" href="../fonts/Poppins-Bold.woff2" as="font">
-  <link rel="preload" href="../fonts/Poppins-Medium.woff" as="font">
-  <link rel="preload" href="../fonts/Poppins-Medium.woff2" as="font">
-  <link rel="preload" href="../fonts/Poppins-SemiBold.woff" as="font">
-  <link rel="preload" href="../fonts/Poppins-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/Poppins-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/Poppins-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-Bold.woff2" as="font">
+  <link rel="preload" href="./fonts/Poppins-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="./fonts/Poppins-SemiBold.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-SemiBold.woff2" as="font">
   <link rel="stylesheet" href="./resources/swiper/swiper.css">
   <link rel="stylesheet" href="./css/main-min.css">
   <script defer src="./resources/swiper/swiper.js"></script>
   <script defer src="./resources/validate/inputmask.js"></script>
   <script defer src="./resources/validate/just-validate.min.js"></script>
-  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
   <script defer src="./js/main.js"></script>
   <title>Tzeezotje</title>
 </head>
@@ -394,7 +393,7 @@
               <form  class="contacts__card-form" action="mail.php" method="post" enctype="multipart/form-data" aria-label="Форма чтобы отправить комментарий">
                 <label class="contacts__card-label label1">
                   Name
-                  <input type="text" name="Имя" placeholder="Имя" data-validate-field="name" id="name" class="contacts__card-input input input-name" >
+                  <input type="text" name="Имя" placeholder="Enter your name" data-validate-field="name" id="name" class="contacts__card-input input input-name" >
                 </label>
                 <label class="contacts__card-label label2">
                   Email
@@ -402,13 +401,15 @@
                 </label>
                 <label class="contacts__card-label label3">
                   Speciale Request
-                  <textarea class="contacts__card-input" placeholder="Комментарий" name="Комментарий" data-validate-field="content" id="content" cols="30" rows="5"></textarea>
+                  <textarea class="contacts__card-input" placeholder="A comment" name="Комментарий" data-validate-field="content" id="content" cols="30" rows="5"></textarea>
                 </label>
                 <button class="contacts__card-btn disabled btn">Send</button>
               </form>
             </div>
           </div>
-          <div class="contacts__map" id="map"></div>
+          <div class="contacts__map" id="map">
+            <iframe style="width: 100%; min-height: 547px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160551.53577411527!2d3.4168792!3d51.0416804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c36d86000a0d65%3A0x7535eb12a3ad34f9!2zSG9vZ2xhdGVtd2VnIDIsIDk4MzAgU2ludC1NYXJ0ZW5zLUxhdGVtLCDQkdC10LvRjNCz0LjRjw!5e0!3m2!1sru!2sru!4v1690989869042!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </section>
       <div class="click">
@@ -416,16 +417,16 @@
           <div class="click__container-close"></div>
           <div class="click__container-content">
             <div class="click__content-form form">
-              <h2 class="click__content-title">Заказать столик</h2>
-              <p class="click__content-text"> Чтобы забронировать столик — заполните формы ниже и наш менеджер свяжется с вами в течении часа.</p>
+              <h2 class="click__content-title">Book a table</h2>
+              <p class="click__content-text"> To book a table, fill out the forms below and our manager will contact you within an hour.</p>
               <form  class="click__form" action="mail.php" method="post" enctype="multipart/form-data" aria-label="Форма чтобы отправить комментарий">
                 <input type="hidden" name="admin_email[]" value="exigonyashka@yandex.ru">
                 <input type="hidden" name="form_subject" value="Заявка с сайта">
                 <label class="click__card-label flex label-name">
-                  <input type="text" name="Имя" placeholder="Как вас зовут?" data-validate-field="name" id="fio" class="click__input click-name">
+                  <input type="text" name="Имя" placeholder="What is your name?" data-validate-field="name" id="fio" class="click__input click-name">
                 </label>
                 <label class="click__card-label label-tel flex">
-                  <input  type="tel" name="phone" placeholder="Ваш телефон" required class="click__input click-tel"
+                  <input  type="tel" name="phone" placeholder="Your phone number" required class="click__input click-tel"
                     data-validate-field="tel" data-validate-rules="phone" id="tel" aria-label="Введите свой телефон">
                 </label>
                 <button class="click__card-btn btn disabled click-btn" type="submit">Отправить</button>

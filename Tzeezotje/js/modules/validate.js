@@ -22,11 +22,11 @@ if(form)  {
     },
     messages: {
       name: {
-        required: 'Введите  имя',
-        minLength: 'Минимальное количество букв - 2',
-        strength: 'Недопустимый формат',
+        required: 'Enter your name',
+        minLength: 'Minimum number of letters - 2',
+        strength: 'Invalid format',
       },
-      email: 'Введите email',
+      email: 'Enter email',
     },
 
 
@@ -110,12 +110,12 @@ if(clickForm) {
       },
       messages: {
         fio: {
-          required: 'Недопустимый формат',
-          minLength: 'Минимальное количество букв - 2',
-          strength: 'Недопустимый формат',
+          required: 'Enter your name',
+          minLength: 'Minimum number of letters - 2',
+          strength: 'Invalid format',
         },
-        tel: 'Введите ваш телефон',
-        email: 'Недопустимый формат',
+        tel: 'Enter your phone',
+        email: 'Invalid format',
       },
 
 
