@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="../fonts/Poppins-Regular.woff" as="font">
+  <link rel="preload" href="../fonts/Poppins-Regular.woff2" as="font">
+  <link rel="preload" href="../fonts/Poppins-Bold.woff" as="font">
+  <link rel="preload" href="../fonts/Poppins-Bold.woff2" as="font">
+  <link rel="preload" href="../fonts/Poppins-Medium.woff" as="font">
+  <link rel="preload" href="../fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="../fonts/Poppins-SemiBold.woff" as="font">
+  <link rel="preload" href="../fonts/Poppins-SemiBold.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <script defer src="./resources/swiper/swiper.js"></script>
+  <script defer src="./resources/validate/inputmask.js"></script>
+  <script defer src="./resources/validate/just-validate.min.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script defer src="./js/main.js"></script>
+  <title>Tzeezotje</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" class="header__logo logo" aria-label="Логотип">
+          <img src="./img/Tzeezotje-logo.svg" alt="Логотип">
+        </a>
+        <div class="header__menu">
+          <div class="header__nav flex">
+            <ul class="header__list flex" aria-label="Меню">
+              <li class="header__item">
+                <a href="#" class="header__link" aria-label="À la carte">
+                  À la carte
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#"  class="header__link" aria-label="Wijnkaart">
+                  Wijnkaart
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#"  class="header__link" aria-label="Lunchmenu">
+                  Lunchmenu
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link" aria-label="Contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="header__exit-menu"></button>
+        </div>
+        <div class="header__social" data-da=".header__nav, 991, last">
+          <a href="tel:+32-9-282-57-25" class="header__social-link flex" aria-label="Нажмите чтобы позвонить нам">
+            <svg width="24" height="24">
+              <use xlink:href="./img/svg/sprites.svg#tel"></use>
+              </svg>
+            +32 9 282 57 25
+          </a>
+        </div>
+        <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="main__back">
+          <div class="main__container container">
+            <span class="main__span">OPEN EVERYDAY 6AM - 9PM</span>
+            <h1 class="main__title">A bad day with lunch is better than a good day without it.</h1>
+            <div class="main__content">
+              <button  aria-label="Кнопка" class="main__btn btn">Reserve a table</button>
+              <ul class="main__list flex" aria-label="Cписок социальных сетей">
+                <li class="main__item">
+                  <a href="#" class="main__link" aria-label="Fb">
+                    <svg width="48" height="48">
+                    <use xlink:href="./img/svg/sprites.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main__item">
+                  <a href="#" class="main__link" aria-label="Lg">
+                    <svg width="48" height="48">
+                    <use xlink:href="./img/svg/sprites.svg#lg"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main__item">
+                  <a href="#" class="main__link" aria-label="Tw">
+                    <svg width="48" height="48">
+                    <use xlink:href="./img/svg/sprites.svg#tw"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main__item">
+                  <a href="#" class="main__link" aria-label="Yt">
+                    <svg width="48" height="48">
+                    <use xlink:href="./img/svg/sprites.svg#yt"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description__container container">
+          <div class="description__cards flex">
+            <div class="description__left">
+              <ul class="description__list" aria-label="Список">
+                <li class="description__item">
+                  <h2 class="description__title">Woensdag 12/01</h2>
+                  <div class="description__content flex">
+                    <p class="description__text">Salade met Serrano</p>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <p class="description__text">Steak Tartaar</p>
+                  </div>
+                </li>
+                <li class="description__item">
+                  <h2 class="description__title">Donderdag 13/01</h2>
+                  <div class="description__content flex">
+                    <p class="description__text">Toast Roquefort</p>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <p class="description__text">Penne met Kip en Prei</p>
+                  </div>
+                </li>
+                <li class="description__item">
+                  <h2 class="description__title">Vrijdag 14/01
+                  </h2>
+                  <div class="description__content flex">
+                    <p class="description__text">Verrassing van de Chef</p>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <p class="description__text">Penne met Kip en Prei</p>
+                  </div>
+                </li>
+                <li class="description__item">
+                  <h2 class="description__title">Vrijdag 15/01
+                  </h2>
+                  <div class="description__content flex">
+                    <p class="description__text">Verrassing van de Chef</p>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <p class="description__text">Penne met Kip en Prei</p>
+                  </div>
+                </li>
+                <li class="description__item">
+                  <h2 class="description__title">Vrijdag 16/01
+                  </h2>
+                  <div class="description__content flex">
+                    <p class="description__text">Verrassing van de Chef</p>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <span class="description__circle"></span>
+                    <p class="description__text">Penne met Kip en Prei</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="description__right flex">
+              <div class="description__img-one index">
+                <picture>
+                <img src="./img/description1.png" alt="Картинка">
+                </picture>
+              </div>
+              <div class="description__img-two index">
+                <picture>
+                <img src="./img/description2.png" alt="Картинка">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="service__container container">
+          <div class="service__swiper swiper">
+            <div class="service__wrapper swiper-wrapper flex">
+              <div class="service__slide swiper-slide">
+                <div class="service__slide-content">
+                  <svg width="83" height="58" class="service__svg">
+                    <use xlink:href="./img/svg/sprites.svg#svg"></use>
+                    </svg>
+                    <h2 class="service__title">Goede service, lekker eten, toffe ambiance</h2>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                    </p>
+                    <h3 class="service__title-fio">ALAIN HEYNDRICKX</h3>
+                </div>
+              </div>
+              <div class="service__slide swiper-slide">
+                <div class="service__slide-content">
+                  <svg width="83" height="58" class="service__svg">
+                    <use xlink:href="./img/svg/sprites.svg#svg"></use>
+                    </svg>
+                    <h2 class="service__title">Goede service, lekker eten, toffe ambiance</h2>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                    </p>
+                    <h3 class="service__title-fio">ALAIN HEYNDRICKX</h3>
+                </div>
+              </div>
+              <div class="service__slide swiper-slide">
+                <div class="service__slide-content">
+                  <svg width="83" height="58" class="service__svg">
+                    <use xlink:href="./img/svg/sprites.svg#svg"></use>
+                    </svg>
+                    <h2 class="service__title">Goede service, lekker eten, toffe ambiance</h2>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+                    </p>
+                    <h3 class="service__title-fio">ALAIN HEYNDRICKX</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+            <button class="service__btn-slide btn-slide service-prev-btn" aria-label="Предыдущий слайд">
+              <svg width="70" height="70">
+              <use xlink:href="./img/svg/sprites.svg#up"></use>
+              </svg>
+            </button>
+            <button class="service__btn-slide btn-slide service-next-btn" aria-label="Следующий слайд">
+              <svg width="70" height="70">
+              <use xlink:href="./img/svg/sprites.svg#down"></use>
+              </svg>
+            </button>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="offer__container container">
+          <div class="offer__card  flex indent">
+            <div class="offer__left left">
+              <div class="offer__content">
+                <h2 class="offer__title">LEKKER ETEN</h2>
+                <p class="offer__text">
+                  Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.
+                </p>
+              </div>
+            </div>
+            <div class="offer__right">
+              <picture>
+              <img src="./img/offer1.png" alt="картинка">
+              </picture>
+            </div>
+          </div>
+          <div class="offer__card offer-card flex indent">
+            <div class="offer__right left">
+              <picture>
+              <img src="./img/offer2.png" alt="картинка">
+              </picture>
+            </div>
+            <div class="offer__left ">
+              <div class="offer__content">
+                <h2 class="offer__title">TOFFE AMBIANCE</h2>
+                <p class="offer__text">
+                  Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="offer__card  flex indent">
+            <div class="offer__left left ">
+              <div class="offer__content">
+                <h2 class="offer__title">LEKKERE COCKTAILS</h2>
+                <p class="offer__text">
+                  Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke cocktail, een goed gesprek en lekker eten.
+                </p>
+              </div>
+            </div>
+            <div class="offer__right">
+              <picture>
+              <img src="./img/offer3.png" alt="картинка">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="foto">
+        <div class="foto__back">
+          <div class="foto__container container flex">
+            <div class="foto__content">
+              <h2 class="foto__title">Sfeerfoto's</h2>
+              <p class="foto__text">De beste manier om de sfeer te ervaren is eens langskomen.
+                In tussentijd hebben we hier alvast wat foto’s voor je klaar.</p>
+            </div>
+            <div class="foto__btn-card">
+              <button class="foto__btn-slide btn-slide  foto-prev-btn" aria-label="Предыдущий слайд">
+                <svg width="70" height="70">
+                <use xlink:href="./img/svg/sprites.svg#up"></use>
+                </svg>
+              </button>
+              <button class="foto__btn-slide btn-slide  foto-next-btn" aria-label="Следующий слайд">
+                <svg width="70" height="70">
+                <use xlink:href="./img/svg/sprites.svg#down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="foto__swiper swiper">
+            <div class="foto__wrapper swiper-wrapper">
+               <div class="foto__slide swiper-slide">
+                <div class="foto__slide-img">
+                  <picture>
+                  <img src="./img/foto-2.png" alt="Картинка">
+                  </picture>
+                </div>
+               </div>
+               <div class="foto__slide swiper-slide">
+                <div class="foto__slide-img">
+                  <picture>
+                  <img src="./img/foto-3.png" alt="Картинка">
+                  </picture>
+                </div>
+               </div>
+               <div class="foto__slide swiper-slide">
+                <div class="foto__slide-img">
+                  <picture>
+                  <img src="./img/foto-1.png" alt="Картинка">
+                  </picture>
+                </div>
+               </div>
+             </div>
+         </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__content flex">
+            <div class="contacts__content-left">
+              <h2 class="contacts__title">Contacts</h2>
+              <ul class="contacts__list" aria-label="список контактов">
+                <li class="contacts__item flex">
+                  <div class="contacts__link">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#call"></use>
+                      </svg>
+                  </div>
+                  <div class="contacts__social">
+                    <span class="contacts__label">Phone Number</span>
+                    <a href="tel:+32-9-282-57-25"  class="contacts__connection"  aria-label="Нажмите чтобы позвонить нам">+32 9 282 57 25</a>
+                  </div>
+                </li>
+                <li class="contacts__item flex">
+                  <div class="contacts__link">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#sms"></use>
+                      </svg>
+                  </div>
+                  <div class="contacts__social">
+                    <span class="contacts__label">Email</span>
+                    <a href="mailto:info@email.com"  class="contacts__connection"  aria-label="Нажмите чтобы отправить на почту">info@email.com</a>
+                  </div>
+                </li>
+                <li class="contacts__item flex">
+                  <div class="contacts__link">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#clock"></use>
+                      </svg>
+                  </div>
+                  <div class="contacts__social">
+                    <span class="contacts__label">Opening Hours</span>
+                    <span class="contacts__connection">Everyday from 6 AM - 9 PM</span>
+                  </div>
+                </li>
+                <li class="contacts__item flex">
+                  <div class="contacts__link">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/svg/sprites.svg#map"></use>
+                      </svg>
+                  </div>
+                  <div class="contacts__social">
+                    <span class="contacts__label">Map Street</span>
+                    <span class="contacts__connection" >Jl. Raya Surabaya 2787</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__content-right">
+              <h2 class="contacts__title margin">have any questions?</h2>
+              <form  class="contacts__card-form" action="mail.php" method="post" enctype="multipart/form-data" aria-label="Форма чтобы отправить комментарий">
+                <label class="contacts__card-label label1">
+                  Name
+                  <input type="text" name="Имя" placeholder="Имя" data-validate-field="name" id="name" class="contacts__card-input input input-name" >
+                </label>
+                <label class="contacts__card-label label2">
+                  Email
+                  <input type="email" name="email" placeholder="Email" data-validate-field="email" id="post" class="contacts__card-input input-mail input">
+                </label>
+                <label class="contacts__card-label label3">
+                  Speciale Request
+                  <textarea class="contacts__card-input" placeholder="Комментарий" name="Комментарий" data-validate-field="content" id="content" cols="30" rows="5"></textarea>
+                </label>
+                <button class="contacts__card-btn disabled btn">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="contacts__map" id="map"></div>
+        </div>
+      </section>
+      <div class="click">
+        <div class="click__container">
+          <div class="click__container-close"></div>
+          <div class="click__container-content">
+            <div class="click__content-form form">
+              <h2 class="click__content-title">Заказать столик</h2>
+              <p class="click__content-text"> Чтобы забронировать столик — заполните формы ниже и наш менеджер свяжется с вами в течении часа.</p>
+              <form  class="click__form" action="mail.php" method="post" enctype="multipart/form-data" aria-label="Форма чтобы отправить комментарий">
+                <input type="hidden" name="admin_email[]" value="exigonyashka@yandex.ru">
+                <input type="hidden" name="form_subject" value="Заявка с сайта">
+                <label class="click__card-label flex label-name">
+                  <input type="text" name="Имя" placeholder="Как вас зовут?" data-validate-field="name" id="fio" class="click__input click-name">
+                </label>
+                <label class="click__card-label label-tel flex">
+                  <input  type="tel" name="phone" placeholder="Ваш телефон" required class="click__input click-tel"
+                    data-validate-field="tel" data-validate-rules="phone" id="tel" aria-label="Введите свой телефон">
+                </label>
+                <button class="click__card-btn btn disabled click-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+            <button class="click__exit"></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container flex">
+        <a href="index.html" aria-label="Логотип">
+          <img src="./img/footer-logo.svg" class="footer__logo logo" alt="Kоготип">
+        </a>
+        <ul class="footer__list main flex" aria-label="Cписок социальных сетей">
+          <li class="main__item">
+            <a href="#" class="main__link link" aria-label="Fb">
+              <svg width="48" height="48">
+              <use xlink:href="./img/svg/sprites.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main__item">
+            <a href="#" class="main__link link" aria-label="Lg">
+              <svg width="48" height="48">
+              <use xlink:href="./img/svg/sprites.svg#lg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main__item">
+            <a href="#" class="main__link link" aria-label="Tw">
+              <svg width="48" height="48">
+              <use xlink:href="./img/svg/sprites.svg#tw"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main__item">
+            <a href="#" class="main__link link" aria-label="Yt">
+              <svg width="48" height="48">
+              <use xlink:href="./img/svg/sprites.svg#yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
