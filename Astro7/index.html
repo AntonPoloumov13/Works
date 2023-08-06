@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/Commissioner-Regular.woff" as="font">
+  <link rel="preload" href="./fonts/Commissioner-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/Commissioner-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Commissioner-Medium.woff2" as="font">
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <script defer src="./resources/swiper/swiper.js"></script>
+  <script defer src="./js/main.js"></script>
+  <title>Название сайта</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" aria-label="Логотип сайта Astro7" class="header__logo">
+          <picture>
+          <source media="(max-width: 600px)" srcset="./img/Astro7(mob).png" >
+          <img src="./img/Astro7.png" alt="Логотип">
+          </picture>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="tarot">
+        <div class="tarot__container">
+          <div class="tarot__top">
+            <div class="tarot__top-content container flex">
+              <h1 class="tarot__top-title title">Таро-расклад на отношения поможет в любви</h1>
+              <h1 class="tarot__top-title title display">Таро расклад на отношения от Александры Жаккар</h1>
+              <p class="tarot__top-text text1">Не стесняйтесь проявлять свои чувства. Неважно на каком этапе сейчас находятся отношения. Важно, чтобы они не утратили романтичность и лёгкость. Чаще говорите приятные слова, устраивайте свидания.</p>
+            </div>
+          </div>
+          <div class="tarot__center">
+            <div class="tarot__center-content container flex">
+              <div class="tarot__center-margin flex">
+                <div class="tarot__center-social">
+                  <div class="tarot__center-avatar">
+                    <div class="tarot__avatar-img">
+                      <picture>
+                      <img src="./img/avatar.png" alt="Аватарка">
+                      </picture>
+                    </div>
+                    <div class="tarot__avatar-content">
+                      <h2 class="tarot__avatar-title">Александра Жаккар</h2>
+                      <span class="tarot__avatar-span text2">Таролог, мастер рейки</span>
+                      <p class="tarot__avatar-text text1">Расклад поможет найти новые отношения или укрепить старые</p>
+                      <span class="tarot__avatar-time text2">Длительность видео — 24 минуты</span>
+                    </div>
+                  </div>
+                  <div class="tarot__center-flower">
+                    <picture>
+                    <img src="./img/flower.png" alt="Цветок">
+                    </picture>
+                  </div>
+                </div>
+                <div class="tarot__center-youtube">
+                  <a class="tarot__youtube-link" href="https://www.youtube.com/watch?v=jgNTUb6Tmeo" aria-label="Cсылка на видео" target="_blank">
+                    <div class="tarot__youtube-img">
+                      <picture>
+                      <source media="(max-width: 600px)" srcset="./img/playerMob.png" type="image/webp">
+                      <img src="./img/player.png" alt="Александра Жаккар">
+                      </picture>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tarot__bottom">
+            <div class="tarot__bottom-container container flex">
+              <div class="tarot__bottom-content">
+                <h2 class="tarot__bottom-title">Аудиопрогноз эксперта на неделю</h2>
+                <div class="tarot__bottom-card">
+                  <ul aria-label="Список знаков задиаков" class="tarot__bottom-list flex">
+                    <li class="tarot__bottom-item active">
+                      <button aria-label="Овен" class="tarot__bottom-btn" data-path="1">
+                        <svg width="30" height="30">
+                        <use xlink:href="./img/svg/sprites.svg#aries"></use>
+                        </svg>
+                        <span class="tarot__bottom-span">овен</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="Tелец" class="tarot__bottom-btn" data-path="2" >
+                        <svg width="30" height="30">
+                        <use xlink:href="./img/svg/sprites.svg#taurus"></use>
+                        </svg>
+                        <span class="tarot__bottom-span">телец</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="Близнец" class="tarot__bottom-btn" data-path="3">
+                        <svg width="30" height="30">
+                        <use xlink:href="./img/svg/sprites.svg#twins"></use>
+                        </svg>
+                        <span class="tarot__bottom-span">близн.</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="Рак" class="tarot__bottom-btn" data-path="4" >
+                        <svg width="30" height="30">
+                        <use xlink:href="./img/svg/sprites.svg#cancer"></use>
+                        </svg>
+                        <span class="tarot__bottom-span">рак</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="Лев" class="tarot__bottom-btn" data-path="5">
+                        <svg width="30" height="30">
+                        <use xlink:href="./img/svg/sprites.svg#lion"></use>
+                        </svg>
+                        <span class="tarot__bottom-span">лев</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="дева" class="tarot__bottom-btn" data-path="6">
+                        <svg width="30" height="30">
+                        <use xlink:href="./img/svg/sprites.svg#virgo"></use>
+                        </svg>
+                        <span class="tarot__bottom-span">дева</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="весы" class="tarot__bottom-btn" data-path="7">
+                        <svg width="30" height="30"  xmlns="http://www.w3.org/2000/svg">
+                          <path d="M26.7246 19.8919H4.6334C4.059 19.8919 4.059 21.9335 4.6334 21.9335H26.7246C27.2982 21.9303 27.2982 19.8919 26.7246 19.8919ZM4.6334 16.4159H12.3934C12.538 16.4155 12.6808 16.3846 12.8126 16.3252C12.9444 16.2657 13.0622 16.1792 13.1582 16.0711C13.2808 15.9865 13.3831 15.8758 13.4579 15.747C13.5327 15.6182 13.5781 15.4745 13.5909 15.3261C13.6037 15.1778 13.5835 15.0284 13.5318 14.8887C13.48 14.7491 13.3981 14.6226 13.2918 14.5183C12.9008 14.1128 12.6156 13.6174 12.4611 13.0758C12.3067 12.5341 12.2878 11.9628 12.4061 11.4121C12.5245 10.8615 12.7764 10.3483 13.1397 9.91794C13.503 9.48755 13.9666 9.15309 14.4896 8.94403C15.0126 8.73497 15.579 8.65772 16.1389 8.71908C16.6988 8.78044 17.235 8.97853 17.7003 9.2959C18.1656 9.61327 18.5458 10.0402 18.8072 10.5391C19.0687 11.0379 19.2035 11.5934 19.1998 12.1567C19.2024 12.6071 19.1073 13.0527 18.921 13.4627C18.7346 13.8728 18.4616 14.2376 18.1206 14.5319C17.9409 14.7039 17.8273 14.9337 17.7998 15.181C17.7723 15.4282 17.8326 15.6773 17.9702 15.8847C18.0591 16.045 18.1891 16.1788 18.3469 16.2723C18.5046 16.3658 18.6844 16.4157 18.8678 16.4167H26.7238C27.2974 16.4167 27.2974 14.3119 26.7238 14.3119H20.819C21.1258 13.6356 21.2824 12.9009 21.2782 12.1583C21.287 11.4315 21.1514 10.7103 20.8794 10.0363C20.6073 9.36233 20.2042 8.74907 19.6934 8.23205C19.1826 7.71504 18.5742 7.30455 17.9036 7.02439C17.233 6.74424 16.5134 6.59998 15.7866 6.59998C15.0598 6.59998 14.3402 6.74424 13.6696 7.02439C12.999 7.30455 12.3906 7.71504 11.8798 8.23205C11.369 8.74907 10.9659 9.36233 10.6938 10.0363C10.4218 10.7103 10.2862 11.4315 10.295 12.1583C10.2955 12.8975 10.442 13.6294 10.7262 14.3119H4.6334C4.0558 14.3111 4.0558 16.4159 4.6334 16.4159Z"/>
+                        </svg>
+                        <span class="tarot__bottom-span">весы</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="Скорпион" class="tarot__bottom-btn" data-path="8">
+                        <svg width="30" height="30">
+                          <path d="M28.4174 23.9815L25.5798 21.1015C25.1934 20.7071 23.7646 22.1039 24.151 22.4983L25.3718 23.7295C24.3854 23.8095 22.787 23.7599 21.899 23.0175C21.6589 22.8019 21.4715 22.5341 21.3514 22.2346C21.2313 21.9351 21.1816 21.612 21.2062 21.2903V9.86711C21.2062 7.56391 20.0742 5.11351 17.7222 5.11351C17.0741 5.16182 16.4435 5.34642 15.8716 5.65522C15.2998 5.96403 14.7996 6.39008 14.4038 6.90551C13.9126 5.80951 13.3342 5.11271 12.0542 5.11271C11.455 5.13796 10.8696 5.29996 10.3426 5.58629C9.81573 5.87263 9.36131 6.27572 9.01416 6.76471C8.34605 5.50626 7.42359 4.40046 6.30536 3.51751C5.86616 3.18391 4.65576 4.76951 5.09416 5.10711C5.78376 5.63111 7.23816 7.35111 7.23816 8.99271V21.4287C7.23816 21.9807 9.36856 21.9807 9.36856 21.4287V9.06711C9.95256 7.89751 10.915 7.14151 11.6662 7.14151C12.531 7.14151 13.2598 8.70871 13.2598 9.86631V21.4895C13.2598 22.0407 15.2598 22.0407 15.2598 21.4895V9.86711C15.2598 9.76951 15.2598 9.13511 15.255 9.03671C15.843 7.87111 16.587 7.14231 17.335 7.14231C18.7446 7.14231 19.2102 8.70951 19.2102 9.86711V21.2879C19.1842 21.9016 19.2969 22.5133 19.54 23.0775C19.7831 23.6416 20.1502 24.1437 20.6142 24.5463C21.7863 25.3976 23.2136 25.8237 24.6606 25.7543C24.8854 25.7543 25.095 25.7463 25.2862 25.7351L24.0302 26.9975C23.747 27.2975 25.1846 28.6775 25.3806 28.4727L28.4206 25.3751C28.6018 25.1883 28.7029 24.938 28.7023 24.6777C28.7017 24.4173 28.5995 24.1675 28.4174 23.9815Z" />
+                        </svg>
+                        <span class="tarot__bottom-span">скорп.</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="стрелец" class="tarot__bottom-btn" data-path="9">
+                        <svg width="30" height="30">
+                          <path d="M24.9243 6.10856C24.8197 6.00445 24.6946 5.92335 24.5568 5.87045C24.419 5.81754 24.2717 5.79401 24.1243 5.80136L15.1539 6.04136C14.5691 6.06856 14.5203 8.20136 15.1067 8.17096L21.6347 8.12216L13.0827 16.4998L10.2403 13.6742C9.82594 13.263 8.32754 14.7534 8.74114 15.1646L11.5835 17.9902L6.67074 22.8758C6.25714 23.287 7.77794 24.683 8.16994 24.3662L13.0827 19.4806L16.0115 22.3926C16.4483 22.7526 17.8099 21.1998 17.3963 20.7926L14.5819 17.9926L23.0491 9.53496L22.8659 16.2398C22.8379 16.8214 24.8187 16.9046 24.8459 16.3406L25.2331 6.90056C25.2396 6.75433 25.2155 6.60834 25.1624 6.47196C25.1092 6.33557 25.0281 6.2118 24.9243 6.10856Z"/>
+                        </svg>
+                        <span class="tarot__bottom-span">стрелец</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="козерог" class="tarot__bottom-btn" data-path="10">
+                        <svg width="30" height="30">
+                          <path d="M22.5593 13.0928C21.8166 13.0926 21.0824 13.2515 20.4062 13.5588C19.7301 13.8662 19.1276 14.3148 18.6393 14.8744C18.6057 14.2296 18.5881 13.5744 18.5729 12.9424C18.4889 9.59445 17.6281 5.80005 14.5809 5.80005C11.9353 5.80005 11.0369 9.12565 10.0913 12.0072C9.85129 11.2944 9.5593 10.6472 9.3665 10.1568C8.4593 7.85845 6.5945 6.39685 4.6377 6.39685C4.0545 6.39605 4.0545 8.48885 4.6369 8.48885C5.4801 8.48885 6.9753 9.76005 7.6361 11.2944C8.33746 12.8955 8.83858 14.577 9.1281 16.3008C9.2321 16.7808 11.0793 16.8192 11.1513 16.3304C11.6825 12.7104 12.7745 7.89365 14.5801 7.89365C15.5689 7.89365 16.4057 10.7224 16.4625 12.9952C16.4308 14.8235 16.6126 16.6492 17.0041 18.4352C16.3979 20.0391 15.1866 21.3409 13.6305 22.0609C12.103 22.4982 10.5267 22.7425 8.9385 22.788C8.3633 22.708 8.0585 24.7768 8.6353 24.8592C10.5532 24.8338 12.4598 24.5597 14.3073 24.0441C15.8857 23.4767 17.2485 22.4321 18.2065 21.0552C18.69 21.8155 19.3634 22.4365 20.1602 22.857C20.957 23.2775 21.8497 23.483 22.7502 23.4532C23.6506 23.4234 24.5278 23.1593 25.295 22.6869C26.0623 22.2146 26.6931 21.5504 27.1253 20.7599C27.5574 19.9693 27.776 19.0798 27.7594 18.179C27.7428 17.2782 27.4916 16.3972 27.0306 15.6231C26.5696 14.8491 25.9148 14.2085 25.1306 13.7648C24.3465 13.3211 23.4603 13.0895 22.5593 13.0928ZM22.5593 21.3128C21.9545 21.308 21.3647 21.1241 20.8643 20.7846C20.3638 20.445 19.9751 19.9649 19.747 19.4048C19.519 18.8447 19.4618 18.2296 19.5828 17.637C19.7038 17.0444 19.9975 16.5009 20.4268 16.075C20.8562 15.6491 21.402 15.3598 21.9956 15.2436C22.5891 15.1274 23.2037 15.1895 23.762 15.4221C24.3203 15.6546 24.7972 16.0472 25.1327 16.5504C25.4682 17.0536 25.6473 17.6449 25.6473 18.2496C25.6431 19.0651 25.3156 19.8455 24.7367 20.4197C24.1578 20.994 23.3747 21.3152 22.5593 21.3128Z"/>
+                        </svg>
+                        <span class="tarot__bottom-span">козерог</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="водолей" class="tarot__bottom-btn" data-path="11">
+                        <svg width="30" height="30">
+                          <path d="M4.43794 14.5704C4.43794 14.5704 8.01714 11.2056 9.55794 11.2056C11.0987 11.2056 13.5163 14.7112 15.1795 14.7112C16.8427 14.7112 19.2643 11.2056 20.8011 11.2056C22.3091 11.2056 25.8203 14.5056 25.8203 14.5056C26.1547 14.7136 27.2971 13.084 26.8603 12.7968C26.8603 12.7968 22.6067 8.9952 20.8003 9C19.1371 9.004 16.8315 12.3912 15.1819 12.3864C13.5187 12.3824 11.2203 8.9984 9.55714 9C7.76274 9 3.49874 12.7968 3.49874 12.7968C3.05874 13.0848 4.29154 14.668 4.43794 14.5704ZM4.43794 21.516C4.43794 21.516 8.01714 18.1512 9.55794 18.1512C11.0987 18.1512 13.5163 21.6568 15.1795 21.6568C16.8427 21.6568 19.2643 18.1512 20.8011 18.1512C22.3091 18.1512 25.8203 21.4512 25.8203 21.4512C26.1547 21.6592 27.2971 20.064 26.8603 19.7768C26.8603 19.7768 22.6067 15.9752 20.8003 15.98C19.1371 15.984 16.8315 19.3712 15.1819 19.3664C13.5187 19.3624 11.2203 15.9776 9.55714 15.98C7.75954 15.9824 3.49154 19.776 3.49154 19.776C3.05874 20.064 4.29154 21.616 4.43794 21.516Z"/>
+                        </svg>
+                        <span class="tarot__bottom-span">водол.</span>
+                      </button>
+                    </li>
+                    <li class="tarot__bottom-item">
+                      <button aria-label="рыбы" class="tarot__bottom-btn" data-path="12">
+                        <svg width="30" height="30">
+                          <path d="M22.8946 24.7454C22.8714 24.7182 20.7346 22.0254 20.357 17.0654H22.4826C23.1226 17.0654 23.1226 14.8462 22.4826 14.8462H20.313C20.4954 9.41977 22.8522 6.66137 22.8978 6.60617C23.3138 6.12617 21.5682 4.61177 21.149 5.09337C21.0242 5.23657 18.189 8.47417 17.997 14.8454H13.6842C13.4962 8.47337 10.377 5.23577 10.2514 5.09497C9.8338 4.61497 8.0914 6.12377 8.5026 6.60777C8.5282 6.63497 11.1842 9.39417 11.3682 14.8446H8.6802C8.0402 14.8446 8.0402 17.0638 8.6802 17.0638H11.3202C11.1752 19.8512 10.1926 22.53 8.501 24.7502C8.085 25.2302 10.021 26.5254 10.249 26.263C12.318 23.6288 13.5046 20.4098 13.6402 17.063H18.0354C18.4298 22.8934 21.0274 26.1254 21.1466 26.263C21.3778 26.5254 23.3138 25.227 22.8946 24.7454Z"/>
+                        </svg>
+                        <span class="tarot__bottom-span">рыбы</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tarot__bottom-player flex content-active" data-target="1">
+                    <audio  src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/1.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="2">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/2.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="3">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/3.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="4">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/4.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="5">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/5.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="6">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/6.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="7">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/7.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="8">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/8.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="9">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/9.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="10">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/10.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="11">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/11.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                  <div class="tarot__bottom-player flex" data-target="12">
+                    <audio src="https://astro7.ru/images/newsletter/mail/2023/temporary/retro-eclipse/12.mp3" controls></audio>
+                    <div class="tarot__bottom-link flex">
+                      <p class="tarot__bottom-text text2">
+                        Наши эксперты составят индивидуальный прогноз
+                      </p>
+                      <button class="tarot__player-btn" aria-label="Нажмите чтобы заказать прогноз">Хочу прогноз</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title title">Отзывы пользователей</h2>
+          <div class="reviews__swiper swiper">
+            <div class="reviews__wrapper swiper-wrapper">
+              <div class="reviews__slide swiper-slide">
+                <p class="reviews__slide-text text1">
+                  Консультация очень понравилась. Эксперт быстро и подробно все просмотрела. Предложила для полной картины смотреть и по астрологии и по нумерологии. Понравилось что не было каких то общих фраз, а одна конкретика.
+                </p>
+                <div class="reviews__slide-link flex">
+                  <span class="reviews__slide-span">Александра, 28 лет</span>
+                  <div class="reviews__slide-img">
+                    <picture>
+                    <img src="./img/variant1.png" alt="аватар">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">
+                <p class="reviews__slide-text text1">
+                  Моя дорогая Алевтина! Какая же Вы классная! Как же вы мне помогаете на моем жизненном пути! Вы читаете людей, как открытую книгу, помогая нам понять чувства, эмоции и действия людей!
+                </p>
+                <div class="reviews__slide-link flex">
+                  <span class="reviews__slide-span">Евгения, 21 год</span>
+                  <div class="reviews__slide-img">
+                    <picture>
+                    <img src="./img/variant2.png" alt="аватар">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">
+                <p class="reviews__slide-text text1">
+                  Очень комфортная обстановка в диалоге, большой спектр детальных раскладов, хорошие попадания. В зависимости от своих вопросов вы можете выбрать вариант просмотра с экспертом, консультацией осталась довольна!
+                </p>
+                <div class="reviews__slide-link flex">
+                  <span class="reviews__slide-span">Людмила, 38 лет</span>
+                  <div class="reviews__slide-img">
+                    <picture>
+                    <img src="./img/variant3.png" alt="аватар">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">
+                <p class="reviews__slide-text text1">
+                  Прямо вау-вау! Увидела много деталей сама, без подсказок. Подробно описывала вопросы, касаемо отношений, дружбы, работы, финансов. Очень понравилась! Рекомендовала бы ее многим!
+                </p>
+                <div class="reviews__slide-link flex">
+                  <span class="reviews__slide-span">Зинаида, 31 год</span>
+                  <div class="reviews__slide-img">
+                    <picture>
+                    <img src="./img/variant4.png" alt="аватар">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">
+                <p class="reviews__slide-text text1">
+                  Приятное впечатление осталось после консультации. Точно, быстро и без воды. Отвечает на четко поставленный вопрос. Чем чётче этот вопрос, тем круче ответ. Вернусь ещё однозначно, за 15 минут консультации получила ответы на все.
+                </p>
+                <div class="reviews__slide-link flex">
+                  <span class="reviews__slide-span">Анна, 38 лет</span>
+                  <div class="reviews__slide-img">
+                    <picture>
+                    <img src="./img/variant4.png" alt="аватар">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__card-prev card-btn">
+              <button class="reviews__prev-btn slide-btn swiper-button-prev" aria-label="Предыдущий слайд">
+                <svg width="45" height="30">
+                <use xlink:href="./img/svg/sprites.svg#prev"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="reviews__slide-action">
+              <div class="reviews__pagination swiper-pagination"></div>
+            </div>
+            <div class="reviews__card-next card-btn">
+              <button class="reviews__next-btn slide-btn swiper-button-next" aria-label="Следующий слайд">
+                <svg width="45" height="30">
+                <use xlink:href="./img/svg/sprites.svg#next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <span class="footer__text">Любое использование материалов сайта допускается только с разрешения Сервиса, при условии размещения активной ссылки, © 2009–2023 Astro7</span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
