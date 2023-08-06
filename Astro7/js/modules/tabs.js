@@ -6,6 +6,11 @@ document.querySelectorAll(".tarot__bottom-btn").forEach(function (tabsBtn) {
       tabContent.classList.remove("content-active")
     })
     document.querySelector(`[data-target="${path}"]`).classList.add("content-active")
+
+    document.querySelectorAll(".tarot__audio").forEach(function(audio)  {
+      audio.pause();
+      audio.currentTime = 0;
+    })
   })
 })
 
